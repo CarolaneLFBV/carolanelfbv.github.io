@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: "Carolane LEFEBVRE"
 permalink: /en/
-remote_theme: jekyll-theme-midnight
 ---
 ## English 🇬🇧
 French version [here](https://carolanelfbv.github.io)
@@ -36,4 +35,4 @@ French version [here](https://carolanelfbv.github.io)
 - You can look up all my projects on [my GitHub](https://github.com/CarolaneLFBV).
 - If you want to contact me, please send me a message with [LinkedIn](https://www.linkedin.com/in/carolane-lefebvre/).
 
-
+theme: jekyll-theme-midnight
