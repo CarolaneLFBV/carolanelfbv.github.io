@@ -2,6 +2,7 @@
 layout: page
 title: "Carolane LEFEBVRE"
 permalink: /en/
+theme: jekyll-theme-midnight
 ---
 ## English 🇬🇧
 French version [here](https://carolanelfbv.github.io)
