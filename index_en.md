@@ -1,3 +1,5 @@
+---
 layout: page
-title: "CarolaneLFBV - 🇬🇧"
+title: "Carolane LEFEBVRE"
 permalink: /en/
+---
