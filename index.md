@@ -1,5 +1,6 @@
 # Carolane LEFEBVRE
 ## French 🇫🇷
+English version [here](https://carolanelfbv.github.io/en/)
 ### À propos
 
 👩🏼‍🎓 Étudiante en Licence Professionnelle Application Mobile et Internet des Objets (AMIO).
