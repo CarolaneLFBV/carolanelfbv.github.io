@@ -4,6 +4,7 @@ title: "Carolane LEFEBVRE"
 permalink: /en/
 ---
 ## English 🇬🇧
+French version [here](https://carolanelfbv.github.io)
 ### About me
 
 👩🏼‍🎓  Bachelor's Degree Student (Mobile Application and Internet Of Things (IOT)).
