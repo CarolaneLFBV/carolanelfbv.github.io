@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans&display=swap');
+
+/** --------------- General --------------- **/
+:root {
+    --white-color: white;
+    --red-one: #c30010;
+    --red-two: #d1001f;
+    --red-three: #de0a26;
+    --red-four: #f94449;
+    --background: rgb(195,0,16);
+    --gradient-red: linear-gradient(90deg, rgba(195,0,16,1) 25%, rgba(209,0,31,1) 50%, rgba(222,10,38,1) 75%, rgba(249,68,73,1) 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    height: 50vh;
+    background: var(--gradient-red);
+}
+
+.section {
+    margin: 50px 80px 0 80px;
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.title-h1 {
+    margin: 20px 0 20px 0;
+    color: var(--red-one);
+}
+
+.section .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/** --------------- Header --------------- **/
+#header img {
+    width: 150px;
+    margin: -50px;
+    position: relative;
+    border: var(--white-color) solid 1px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+#header h1, h3 {
+    font-family: sans-serif;
+    color: var(--white-color);
+    position: relative;
+    top: 60%;
+}
+
+#btns-link {
+    position: relative;
+    top: 65%;
+}
+
+#btns-link a.button {
+    border: var(--white-color) solid 1.5px;
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 10px 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#btns-link a:hover {
+    background-color: var(--red-one);
+}
+
+/** --------------- Icons --------------- **/
+.section .container .item img {
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px black;
+}
+
+.section .container .item-name {
+    color: gray;
+    text-align: center;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.section .container .item-name:hover {
+    color: var(--red-one)
+}
+
+/** --------------- Footer --------------- **/
+#footer p {
+    padding: 10px;
+    background-color: var(--red-one);
+    color: var(--white-color);
+    text-align: center;
+}
+
+/** --------------- Back to top btn --------------- **/
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: var(--red-four); 
+    color: white; 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#topBtn img {
+    width: 20px;
+}
