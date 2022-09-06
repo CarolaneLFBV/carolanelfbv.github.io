@@ -3,12 +3,7 @@
 /** --------------- General --------------- **/
 :root {
     --white-color: white;
-    --red-one: #c30010;
-    --red-two: #d1001f;
-    --red-three: #de0a26;
     --red-four: #f94449;
-    --background: rgb(195,0,16);
-    --gradient-red: linear-gradient(90deg, rgba(195,0,16,1) 25%, rgba(209,0,31,1) 50%, rgba(222,10,38,1) 75%, rgba(249,68,73,1) 100%);
 }
 
 * {
@@ -26,7 +21,7 @@ body {
 
 #header {
     height: 50vh;
-    background: var(--gradient-red);
+    background: var(--red-four);
 }
 
 .section {
@@ -41,7 +36,7 @@ p {
 
 .title-h1 {
     margin: 20px 0 20px 0;
-    color: var(--red-one);
+    color: var(--red-four);
 }
 
 .section .container {
@@ -82,7 +77,7 @@ p {
 }
 
 #btns-link a:hover {
-    background-color: var(--red-one);
+    background-color: var(--red-four);
 }
 
 /** --------------- Icons --------------- **/
@@ -100,13 +95,13 @@ p {
 }
 
 .section .container .item-name:hover {
-    color: var(--red-one)
+    color: var(--red-four)
 }
 
 /** --------------- Footer --------------- **/
 #footer p {
     padding: 10px;
-    background-color: var(--red-one);
+    background-color: var(--red-four);
     color: var(--white-color);
     text-align: center;
 }
