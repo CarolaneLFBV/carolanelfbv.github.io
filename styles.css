@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans&display=swap');
 
-/** --------------- General --------------- **/
+/** --------------- Layout --------------- **/
 :root {
-    --white-color: white;
-    --red-four: #f94449;
+    --primary-color: #232946;
+    --secondary-color: #d4d8f0;
+    --paragraph-color: #b8c1ec;
+    --pink-color: #eebbc3;
+    --highlight-color: #d4939d;
 
+    --white-color: #fffffe;
+    
     --title-size: 30px;
     --text-size: 16px;
     --item-title-size: 19px;
+
+    --otwo-em: 0.2em;
+    --othree-em: 0.3em;
+    --ofour-em: 0.4em;
+    --ofive-em: 0.5em;
+    --one-em: 1em;
 }
 
 * {
@@ -23,97 +34,185 @@ body {
     align-items: center;
 }
 
-#header {
-    height: 50vh;
-    background: var(--red-four);
-}
-
-.section {
-    margin: 50px 80px 0 80px;
-    padding: 20px;
-}
-
-p {
+p, strong {
     text-align: justify;
     font-size: var(--text-size);
 }
 
-.title-h1 {
-    margin: 20px 0 20px 0;
-    color: var(--red-four);
-    font-size: var(--title-size);
-}
 
 /** --------------- Header --------------- **/
-#header img {
-    width: 150px;
-    margin: -50px;
-    position: relative;
-    border: var(--white-color) solid 1px;
-    padding: 10px;
+header {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 15em;
+    margin: 3em;
+    padding: var(--ofive-em);
+    border: var(--pink-color) 0.1em solid;
     border-radius: 100px;
 }
 
-#header h1, h3 {
-    font-family: sans-serif;
-    color: var(--white-color);
-    position: relative;
-    top: 60%;
-}
-
-#btns-link {
-    position: relative;
-    top: 65%;
-}
-
-#btns-link a.button {
-    border: var(--white-color) solid 1.5px;
-    text-decoration: none;
-    color: var(--white-color);
-    margin: 10px 10px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-#btns-link a:hover {
-    background-color: var(--red-four);
-}
-
-/** --------------- Icons --------------- **/
-
-.section .container {
-    padding: 10px;
+header .header-infos {
     display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.section .container .item img {
-    width: 150px;
-    border-radius: 30px;
-    box-shadow: 2px 3px 10px black;
-    margin: 10px 20px 10px 0;
+header .header-infos .header-title {
+    color: var(--white-color);
 }
 
-.section .container .item-title {
-    font-size: var( --item-title-size);
-    color: var(--red-four);
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: -13px;
+header .btns-link {
+    margin-top: 2em;
+} 
+
+header .btns-link a.button {
+    border: var(--pink-color) solid 1.5px;
+    color: var(--pink-color);
+    text-decoration: none;
+    padding: var(--ofour-em);
+    margin: var(--otwo-em);
+    border-radius: var(--one-em);
 }
 
-.section .container .text {
-    height: 160px;
+header .btns-link a:hover {
+    color: var(--white-color);
+    background-color: var(--pink-color);
+}
+
+/** --------------- About me --------------- **/
+.about-section {
+    background-color: var(--secondary-color);
+}
+
+.about-title {
+    color: var(--primary-color);
+    font-size: var(--title-size);
+    padding: var(--one-em);
+    padding-bottom: var(--otwo-em);
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ai {
+    display: flex;
+    float: left;
+    width: 50%;
+    padding: 2em 5em 2em 5em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ai .cardboard {
+    background-color: var(--white-color);
+    padding: var(--one-em);
+    border-radius: var(--one-em);
     width: 100%;
-    text-align: justify;
 }
 
+.ai .cardboard h2 {
+    color: var(--primary-color);
+    text-align: left;
+    padding-left: var(--ofour-em)em;
+    padding-bottom: var(--ofive-em);
+}
+
+.ai .cardboard p {
+    font-size: var(--text-size);
+    padding: 0.7em;
+
+}
+
+/** --------------- Projects --------------- **/
+.project-section {
+    background-color: var(--primary-color);
+}
+
+.project-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-title {
+    color: var(--white-color);
+    font-size: var(--title-size);
+    padding: var(--one-em);
+    padding-bottom: var(--otwo-em);
+}
+
+.project-section .caption {
+    color: var(--paragraph-color);
+    text-align: center;
+}
+
+/** --------------- Projects Cardboard --------------- **/
+
+.cardboard {
+    width: 20em;
+    background-color: var(--white-color);
+    padding: var(--one-em);
+    margin: var(--one-em);
+    border-radius: var(--one-em);
+}
+
+.cardboard img {
+    width: 8em;
+    border-radius: var(--one-em);
+    box-shadow: var(--ofour-em) 0.03em 5px var(--primary-color);
+}
+
+.cardboard .item-title {
+    color: var(--primary-color);
+    font-size: var(--item-title-size);
+    padding: var(--ofive-em);
+    padding-bottom: 0;
+    font-weight: 900;
+    text-align: center;
+}
+
+.cardboard .text {
+    color: var(--highlight-color);
+    font-weight: 900;
+    padding: var(--otwo-em);
+}
+
+.cardboard .tech-title {
+    text-align: left;
+    color: var(--primary-color);
+    padding: var(--one-em) var(--otwo-em) var(--ofive-em) var(--otwo-em);
+}
+
+.cardboard .tech-used {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardboard .tech-item {
+    background-color: var(--primary-color);
+    color: var(--paragraph-color);
+    padding: var(--ofive-em);
+    margin: var(--otwo-em);
+    border-radius: var(--othree-em);
+    font-weight: 900;
+}
 
 /** --------------- Footer --------------- **/
-#footer p {
+footer {
+    background-color: var(--pink-color);
+}
+
+footer p {
     padding: 10px;
     background-color: var(--red-four);
-    color: var(--white-color);
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -126,7 +225,7 @@ p {
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: var(--red-four); 
+    background-color: var(--paragraph-color); 
     color: white; 
     cursor: pointer;
     padding: 15px;

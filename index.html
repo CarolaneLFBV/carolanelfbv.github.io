@@ -11,69 +11,130 @@
 <body>
 
     <!-- Header -->
-    <header id="header">
-        <h1>Carolane LEFEBVRE</h1>
-        <h3>Étudiante | Développeuse iOS</h3>
-        <div id="btns-link">
-            <a href="https://github.com/CarolaneLFBV" class="button">GitHub</a>
-            <a href="https://www.linkedin.com/in/carolane-lefebvre/" class="button">LinkedIn</a>
+    <header>
+        <img src="assets/images/clfbv.jpeg" alt="profile_picture">
+
+        <div class="header-infos">
+
+            <div class="header-title">
+                <h1>Carolane LEFEBVRE</h1>
+                <h3>Étudiante | Développeuse iOS</h3>
+     
+                <div class="btns-link">
+                    <a href="https://github.com/CarolaneLFBV" class="button">GitHub</a>
+                    <a href="https://www.linkedin.com/in/carolane-lefebvre/" class="button">LinkedIn</a>
+                </div>
+            </div>
         </div>
-        <img src="assets/images/lefebvre.png" alt="profile_picture">
+
     </header>
 
     <!-- About -->
-    <div class="section">
-        <div class="about">
-            <h1 class="title-h1"> À propos </h1>
-            <p> Je suis une étudiante en licence professionnelle, et j’ai pour but de devenir une développeuse iOS. J’aime exposer ma créativité à travers le développement d’applications, et j’aime résoudre les problèmes des utilisateurs.<br><br> 
+    <div class="about-section">
+        <h1 class="about-title"> À propos </h1>
+        
+        <div class="about-items">
+            <div class="ai">
+                <p>
+                    Je suis actuellement étudiante/alternante en licence professionnelle AMIO (Application Mobile et Internet des Objets), 
+                    et j'ai l'ambition de devenir développeuse iOS et/ou mobile dans sa généralité. 
+                    Au travers du développement, j'apprécie exposer ma créativité, et résoudre les problèmes utilisateurs. <br/><br/><br/>
+        
+                    Je développe et améliore des applications iOS grâce aux connaissances acquises en autonomie depuis désormais un an, 
+                    et j'apprends continuellement en développant et améliorant différentes compétences tels que des frameworks, 
+                    le côté serveur, et autres. <br/><br/><br/>
+        
+                    Fascinée par la technologie, j’aime expérimenter dans différents domaines autre que mobile : l'intelligence artificielle,
+                    le développement web/logiciel, la réalité augmentée etc. 
+                    Je cherche toujours à découvrir ce que la technologie peut ou va pouvoir nous apporter.
+                </p>
+            </div>
 
-                Je réalise et améliore des applications iOS grâce à mes connaissances en Swift, et je continue d’apprendre en développant d’autres petits projets dans le but d’améliorer mes compétences.<br><br>
-                
-                Fascinée par la technologie, j’aime expérimenter dans différents domaines : l’IA, le web, le mobile, la réalité augmentée, etc. Je cherche toujours à découvrir et apprendre ce que la technologie peut ou va pouvoir nous apporter. </p>
+            <div class="ai">
+                <div class="cardboard">
+                    <h2>Compétences</h2>
+                    <p><strong>📱 Développement Mobile :</strong> Swift, SwiftUI, Java Android</p>
+                    <p><strong>💻 Développement Front-End :</strong> HTML5, CSS3, VueJS (Quasar, Pixia, Axios) </p>
+                    <p><strong>🖥️ Développement Back-End :</strong> Java, Python, Django (DRF) </p>
+                    <p><strong>🧰 Outils de développement :</strong> Xcode, Visual Studio Code, WebStorm, Talend </p>
+                    <p><strong>🧰 Autres outils de développement :</strong> Git, Docker, Gestion API </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
 
-    <div class="section">
-        <h1 class="title-h1"> Mes projets </h1>
+    <div class="project-section">
+        <h1 class="project-title"> Projets </h1>
+        <p class="caption"> Si ce n'est pas précisé, le code source de chaque projet est disponible sur mon GitHub. </p>
 
         <div class="container">
-            <div class="item">
-                <a href="https://github.com/CarolaneLFBV/FruitSearcher"><img src="assets/images/projects/FruitSearcher.png"></a>
-            </div>
-            <div class="text">  
-                <div class="item-title"> FruitSearcher </div> <br \> 
-                <p> Application iOS qui affiche des données sur les fruits. Il propose notamment à l'utilisateur de pouvoir intéragir
-                    avec une liste de course. Pour finir, l'utilisateur a la possibilité d'utiliser une IA permettant de reconnaître les fruits. <br \>
-                <strong>Outils utilisés : Xcode, Swift, SwiftUI, API, CoreML</strong></p>
-            </div>            
-        </div>
+            <div class="cardboard">
+                <div class="item">
+                    <a href="https://github.com/CarolaneLFBV/FruitSearcher"><img src="assets/images/projects/FruitSearcher.png"></a>
+                </div>
+                <div>  
+                    <div class="item-title"> FruitSearcher </div> <br \> 
+                    <p class="text"> Application iOS - Gestion de fruits et de la vie quotidienne. </p>
 
-            <div class="container">
+                    <div class="technology">
+                        <h4 class="tech-title">Technologies utilisées</h4>
+                        <div class="tech-used">
+                            <div class="tech-item">Xcode</div>
+                            <div class="tech-item">Swift</div>
+                            <div class="tech-item">SwiftUI</div>
+                            <div class="tech-item">API</div>
+                            <div class="tech-item">CoreML</div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+    
+            <div class="cardboard">
                 <div class="item">
                     <a href="https://github.com/CarolaneLFBV/RecipIT"><img src="assets/images/projects/recipit.png"></a>
                 </div>
                 <div class="text">  
                     <div class="item-title"> RecipIT </div> <br \> 
-                    <p> Application iOS de recettes de cuisine avec possibilité d'ajout de l'utilisateur. <br \>
-                    <strong>Outils utilisés : Xcode, Swift, SwiftUI</strong></p>
+                    <p class="text"> Application iOS - Gestion et création de recettes de cuisine. </p>
+
+                    <div class="technology">
+                        <h4 class="tech-title">Technologies utilisées</h4>
+                        <div class="tech-used">
+                            <div class="tech-item">Xcode</div>
+                            <div class="tech-item">Swift</div>
+                            <div class="tech-item">SwiftUI</div>
+                            <div class="tech-item">MVM</div>
+                        </div>
+                    </div>
                 </div>            
             </div>
-
-            <div class="container">
+    
+            <div class="cardboard">
                 <div class="item">
                     <a href="https://github.com/CarolaneLFBV/MarioKedex"><img src="assets/images/projects/mariokedex.png"></a>
                 </div>
                 <div class="text">  
                     <div class="item-title"> MarioKedex </div> <br \> 
-                    <p> Application iOS de liste des joueurs de mario kart sur toutes consoles confondues. <br \>
-                    <strong>Outils utilisés : Xcode, Swift, SwiftUI, API</strong></p>
-                </div>            
+                    <p class="text"> Application iOS - Classification des les personnages de MarioKart</p>
+                    
+                    <div class="technology">
+                        <h4 class="tech-title">Technologies utilisées</h4>
+                        <div class="tech-used">
+                            <div class="tech-item">Xcode</div>
+                            <div class="tech-item">Swift</div>
+                            <div class="tech-item">SwiftUI</div>
+                            <div class="tech-item">API</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
     
-    <footer id="footer">
-        <p> Site web développé par Carolane LEFEBVRE 👋 </p>
+    <footer>
+        <p> © 2022 | Site web développé par Carolane LEFEBVRE 👋 </p>
     </footer>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="assets/images/arrow_up.png"></button>
