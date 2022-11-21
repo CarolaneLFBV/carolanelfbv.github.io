@@ -52,6 +52,7 @@ header {
     background: var(--primary-color);
     display: flex;
     justify-content: center;
+    padding: 50px 20px 50px 20px;
 }
 
 header img {
@@ -93,6 +94,9 @@ header .btns-link a:hover {
 /** --------------- About me --------------- **/
 .about-section {
     background-color: var(--secondary-color);
+    padding: 50px 20px 50px 20px;
+    height: auto;
+    min-height: 100vh;
 }
 
 .about-title {
@@ -100,18 +104,19 @@ header .btns-link a:hover {
     font-size: var(--title-size);
     padding: var(--one-em);
     padding-bottom: var(--otwo-em);
+    margin-bottom: 1rem;
 }
 
 .about-items {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .ai {
     display: flex;
-    float: left;
-    width: 50%;
-    padding: 2em 5em 2em 5em;
+    width: 100%;
+    padding: 2em;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -138,6 +143,10 @@ header .btns-link a:hover {
 /** --------------- Projects --------------- **/
 .project-section {
     background-color: var(--primary-color);
+    padding: 100px 20px 0px 20px;
+    height: auto;
+    min-height: 100vh;
+
 }
 
 .project-section .container {
@@ -151,11 +160,13 @@ header .btns-link a:hover {
     font-size: var(--title-size);
     padding: var(--one-em);
     padding-bottom: var(--otwo-em);
+
 }
 
 .project-section .caption {
     color: var(--paragraph-color);
     text-align: center;
+    margin-bottom: 100px;
 }
 
 /** --------------- Projects Cardboard --------------- **/
@@ -166,6 +177,7 @@ header .btns-link a:hover {
     padding: var(--one-em);
     margin: var(--one-em);
     border-radius: var(--one-em);
+    margin-bottom: 50px;
 }
 
 .cardboard img {
@@ -216,7 +228,7 @@ footer {
 }
 
 footer p {
-    padding: 10px;
+    padding: 1em;
     background-color: var(--red-four);
     color: var(--primary-color);
     text-align: center;
@@ -244,110 +256,13 @@ footer p {
 }
 
 /** --------------- Media Screen 736px --------------- **/
-@media (max-width: 1067px) {
-
-    /** --------------- Header --------------- **/
+@media (min-width: 1024px) {
     
-    header {
-        background: var(--primary-color);
-        display: flex;
-        justify-content: center;
-    }
-    
-    header img {
-        width: 7em;
-        padding: 0.2em;
-        margin: 1.5em;
-        border: var(--pink-color) 0.1em solid;
-        border-radius: 10em;
-    }
-
-    header .header-infos {
-        font-size: 10px;
-        padding: 1em;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-    
-    header .header-infos .header-title {
-        color: var(--white-color);
-    }
-    
-    header .btns-link {
-        margin-top: 2em;
-    } 
-    
-    header .btns-link a.button {
-        border: var(--pink-color) solid 1.5px;
-        color: var(--pink-color);
-        text-decoration: none;
-        padding: var(--osix-em);
-        margin: var(--otwo-em);
-        border-radius: var(--one-em);
-    }
-    
-    /** --------------- About me --------------- **/
-
-    .about-title {
-        color: var(--primary-color);
-        font-size: var(--md-title-size);
-        padding: var(--one-em);
-        padding-bottom: var(--otwo-em);
+    .about-section {
+        min-height: 50vh;
     }
 
     .about-items {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .ai {
-        width: 50%;
-        padding: 1em 2.5em 1em 2.5em;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .ai p {
-        font-size: var(--md-text-size);
-    }
-
-    .ai .cardboard {
-        background-color: var(--white-color);
-        padding: var(--ofive-em);
-        border-radius: var(--one-em);
-    }
-
-    .ai .cardboard h2 {
-        font-size: var(--md-title-size);
-        color: var(--primary-color);
-        text-align: center;
-        padding-left: var(--otwo-em);
-        padding-bottom: var(--othree-em);
-    }
-
-    .ai .cardboard p {
-        font-size: var(--md-text-size);
-        text-align: center;
-    }
-
-    /** --------------- Project --------------- **/
-
-    .project-section .caption {
-        color: var(--paragraph-color);
-        text-align: center;
-        padding: var(--otwo-em);
-    }
-}
-
-
-/** --------------- Media Screen 736px --------------- **/
-@media (max-width: 770px) {
-
-    .ai .cardboard p {
-        text-align: left;
-    }
-    .ai .cardboard strong {
-        display: none;
+        flex-direction: row;
     }
 }
