@@ -14,17 +14,10 @@
     --text-size: 16px;
     --item-title-size: 19px;
 
-    /* Media screen */
-    --md-title-size: 14px;
-    --md-text-size: 16px;
-    --md-item-title-size: 14px;
-
     --otwo-em: 0.2em;
     --othree-em: 0.3em;
     --ofour-em: 0.4em;
     --ofive-em: 0.5em;
-    --osix-em: 0.6em;
-    --oseven-em: 0.7em;
     --one-em: 1em;
 }
 
@@ -44,6 +37,7 @@ body {
 p, strong {
     text-align: justify;
     font-size: var(--text-size);
+    padding: 0.45em;
 }
 
 
@@ -51,25 +45,22 @@ p, strong {
 header {
     background: var(--primary-color);
     display: flex;
-    justify-content: center;
-    padding: 50px 20px 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
 }
 
 header img {
-    width: 15em;
-    margin: 3em;
+    width: 13em;
+    margin: 1.5em;
     padding: var(--ofive-em);
     border: var(--pink-color) 0.1em solid;
-    border-radius: 100px;
+    border-radius: 10em;
 }
 
 header .header-infos {
     display: flex;
     align-items: center;
-    text-align: center;
-}
-
-header .header-infos .header-title {
     color: var(--white-color);
 }
 
@@ -82,7 +73,6 @@ header .btns-link a.button {
     color: var(--pink-color);
     text-decoration: none;
     padding: var(--ofour-em);
-    margin: var(--otwo-em);
     border-radius: var(--one-em);
 }
 
@@ -94,17 +84,14 @@ header .btns-link a:hover {
 /** --------------- About me --------------- **/
 .about-section {
     background-color: var(--secondary-color);
-    padding: 50px 20px 50px 20px;
     height: auto;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .about-title {
     color: var(--primary-color);
     font-size: var(--title-size);
     padding: var(--one-em);
-    padding-bottom: var(--otwo-em);
-    margin-bottom: 1rem;
 }
 
 .about-items {
@@ -117,36 +104,30 @@ header .btns-link a:hover {
     display: flex;
     width: 100%;
     padding: 2em;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .ai .cardboard {
     background-color: var(--white-color);
-    padding: var(--one-em);
-    border-radius: var(--one-em);
     width: 100%;
+    border-radius: var(--one-em);
+    color: var(--primary-color);
+    text-align: left;
 }
 
 .ai .cardboard h2 {
-    color: var(--primary-color);
-    text-align: left;
-    padding-left: var(--ofour-em);
-    padding-bottom: var(--ofive-em);
+    padding: var(--ofour-em);
 }
 
-.ai .cardboard p {
-    font-size: var(--text-size);
-    padding: 0.7em;
+.ai .cardboard strong {
+    display: none;
 }
 
 /** --------------- Projects --------------- **/
 .project-section {
     background-color: var(--primary-color);
-    padding: 100px 20px 0px 20px;
     height: auto;
-    min-height: 100vh;
-
+    min-height: 70vh;
 }
 
 .project-section .container {
@@ -159,14 +140,12 @@ header .btns-link a:hover {
     color: var(--white-color);
     font-size: var(--title-size);
     padding: var(--one-em);
-    padding-bottom: var(--otwo-em);
-
 }
 
 .project-section .caption {
     color: var(--paragraph-color);
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 5em;
 }
 
 /** --------------- Projects Cardboard --------------- **/
@@ -177,20 +156,18 @@ header .btns-link a:hover {
     padding: var(--one-em);
     margin: var(--one-em);
     border-radius: var(--one-em);
-    margin-bottom: 50px;
 }
 
 .cardboard img {
-    width: 8em;
+    width: 7em;
     border-radius: var(--one-em);
     box-shadow: var(--ofour-em) 0.03em 5px var(--primary-color);
 }
 
 .cardboard .item-title {
     color: var(--primary-color);
-    font-size: var(--item-title-size);
-    padding: var(--ofive-em);
-    padding-bottom: 0;
+    font-size: var(--text-size);
+    padding: var(--ofour-em);
     font-weight: 900;
     text-align: center;
 }
@@ -198,7 +175,6 @@ header .btns-link a:hover {
 .cardboard .text {
     color: var(--highlight-color);
     font-weight: 900;
-    padding: var(--otwo-em);
 }
 
 .cardboard .tech-title {
@@ -244,19 +220,31 @@ footer p {
     border: none; 
     outline: none; 
     background-color: var(--paragraph-color); 
-    color: white; 
+    color: var(--white-color); 
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
+    padding: var(--ofive-em);
+    border-radius: 0.5em;
     font-size: var(--text-size);
 }
 
 #topBtn img {
-    width: 20px;
+    width: 1.2em;
 }
 
 /** --------------- Media Screen 736px --------------- **/
 @media (min-width: 1024px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px 20px 50px 20px;
+    }
+
+    header img {
+        width: 15em;
+        margin: 3em;
+    }
     
     .about-section {
         min-height: 50vh;
@@ -264,5 +252,9 @@ footer p {
 
     .about-items {
         flex-direction: row;
+    }
+
+    .ai .cardboard strong {
+        display: inline;
     }
 }
