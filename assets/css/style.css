@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root {
+    --red-pale: #f25c54;
+    --orange-pale: #f27059;
+    --peach-color: #f4845f;
+    --beige-pale: #f79d65;
+    --sand-color: #f7b267;
+
+    --black-color: black;
+    --white-color: white;
+
+    --font-title: 2rem;
+    --font-secondtitle: 2rem;
+    --font-caption: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+}
+
+/* -------------- NAV BAR -------------- */
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--black-color);
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+#navbar a:hover {
+    color: var(--red-pale);
+}
+
+#navList {
+    display: none;
+    padding-left: 2rem;
+}
+
+#navList ul {
+    display: block;
+    width: 100%;
+}
+
+#navList ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+#navList ul li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    padding: 1.5rem 2.0rem;
+}
+
+#navList ul li a:hover {
+    color: var(--red-pale);
+}
+
+.is_active {
+    color: var(--red-pale);
+}
+
+#navList ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+/* -------------- HEADER -------------- */
+
+section {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+header img {
+    width: 13rem;
+    padding: 0.15rem;
+    margin: 1rem;
+    border: var(--red-pale) 0.1em solid;
+    border-radius: 10rem;
+}
+
+header h1 {
+    color: var(--red-pale);
+}
+
+header h3 {
+    color: var(--peach-color);
+    padding: 1rem;
+}
+
+/* -------------- BUTTONS -------------- */
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.button-section .button-item {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: var(--orange-pale);
+    border-radius: 0.5rem;
+}
+
+.button-section .button-item a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.button-section .button-item:hover{
+    background-color: var(--sand-color);
+    color: var(--white-color);
+}
+
+/* -------------- CARDBOARD -------------- */
+
+.section-cardboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-cardboard h1 {
+    border-bottom: 0.3rem solid var(--red-pale);
+    padding: 1rem;
+}
+
+.cardbox {
+    padding: 1rem;
+    margin: 1.5rem;
+    width: 13rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.5rem 1rem var(--black-color);
+}
+
+.cardbox a {
+    text-decoration: none;
+}
+
+.cardbox h4{
+    color: var(--red-pale);
+    font-size: var(--font-secondtitle);
+    margin-bottom: 0.5rem;
+}
+
+.cardbox h3{
+    color: var(--red-pale);
+    margin-bottom: 0.5rem;
+}
+
+.cardbox img {
+    width: 5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cardbox .tag-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardbox .tag-item {
+    background-color: var(--sand-color);
+    color: var(--white-color);
+    padding: 0.3rem;
+    margin: 0.2rem;
+    border-radius: 0.3rem;
+    font-weight: 900;
+}
+
+.cardbox .tag-notAS {
+    background-color: var(--orange-pale);
+    color: var(--white-color);
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.3rem;
+    font-weight: 900;
+}
+
+/* -------------- ABOUT ME -------------- */
+.section-paragraph {
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.section-paragraph h1 {
+    text-align: left;
+    font-size: var(--font-title);
+    color: var(--red-pale);
+    margin-bottom: 1rem;
+}
+
+.section-paragraph p {
+    font-size: var(--font-caption);
+}
+
+.section-paragraph ul li, .section-paragraph ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 0.4rem;
+}
+
+.section-paragraph ul li:hover{
+    color: var(--red-pale);
+}
+
+/* -------------- MEDIA SCREEN -------------- */
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+
+
