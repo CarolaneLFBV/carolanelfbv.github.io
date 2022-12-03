@@ -34,6 +34,10 @@ body {
     box-shadow: 0.1rem 0.1rem 0.5rem var(--black-color);
 }
 
+#navbar .logo {
+    font-size: 1.5rem;
+}
+
 #navbar a {
     text-decoration: none;
     color: var(--black-color);
@@ -70,7 +74,7 @@ body {
     color: var(--red-pale);
 }
 
-.is_active {
+#navList .is_active {
     color: var(--red-pale);
 }
 
@@ -106,6 +110,7 @@ header h3 {
 }
 
 /* -------------- BUTTONS -------------- */
+
 .button-section {
     display: flex;
     justify-content: center;
@@ -131,14 +136,16 @@ header h3 {
 /* -------------- CARDBOARD -------------- */
 
 .section-cardboard {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.section-cardboard h1 {
-    border-bottom: 0.3rem solid var(--red-pale);
-    padding: 1rem;
+.card-theme h1 {
+    text-decoration-line: underline;
+    text-decoration-color: var(--red-pale);
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
 }
 
 .cardbox {
@@ -146,7 +153,7 @@ header h3 {
     margin: 1.5rem;
     width: 13rem;
     border-radius: 1rem;
-    box-shadow: 0.3rem 0.5rem 1rem var(--black-color);
+    box-shadow: 0.1rem 0.2rem 0.5rem var(--black-color);
 }
 
 .cardbox a {
@@ -168,6 +175,7 @@ header h3 {
     width: 5rem;
     border-radius: 1rem;
     margin-bottom: 0.5rem;
+    box-shadow: 0.05rem 0.05rem 0.8rem var(--black-color);
 }
 
 .cardbox .tag-section {
@@ -197,7 +205,7 @@ header h3 {
 /* -------------- ABOUT ME -------------- */
 .section-paragraph {
     text-align: justify;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 
 .section-paragraph h1 {
@@ -208,10 +216,10 @@ header h3 {
 }
 
 .section-paragraph p {
-    font-size: var(--font-caption);
+    font-size: 1rem;
 }
 
-.section-paragraph ul li, .section-paragraph ul li a{
+.section-paragraph ul li, .section-paragraph ul li a {
     list-style: none;
     text-decoration: none;
     color: var(--black-color);
@@ -222,8 +230,63 @@ header h3 {
     color: var(--red-pale);
 }
 
+/* -------------- Footer -------------- */
+footer p {
+    padding: 1em;
+    color: var(--red-pale);
+    text-align: center;
+    margin-top: auto;
+}
+
 /* -------------- MEDIA SCREEN -------------- */
 
+@media screen and (min-width: 413px) and (max-width: 1022px){  
+    .section-cardboard {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .section-paragraph p, .section-paragraph li{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 1023px) and (max-width: 1110px){
+    .section-cardboard {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .section-cardboard h1 {
+        border-bottom: 0.3rem solid var(--red-pale);
+        padding: 1rem;
+    }
+
+    .section-paragraph p, .section-paragraph li{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1111px){
+    section {
+        padding: 4rem;
+    }
+
+    .card-theme {
+        padding-bottom: 2rem;
+    }
+
+    .section-paragraph h1 {
+        font-size: 2rem;
+    }
+
+    .section-paragraph p {
+        font-size: 1.3rem;
+    }
+}
+
+/* LANDSCAPE MODE DISABLED */
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     html {
       transform: rotate(-90deg);
@@ -234,6 +297,6 @@ header h3 {
       top: 100%;
       left: 0;
     }
-  }
+}
 
 
