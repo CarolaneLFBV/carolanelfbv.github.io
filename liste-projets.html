@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Carolane LEFEBVRE</title>
+    <title>Carolane LEFEBVRE - Apps</title>
 </head>
 <body>
-
-     <div id="navbar">
-        <a href="#" src="Logo Accueil" class="logo">🏠</a>
+    <div id="navbar">
+        <a href="index.html" src="Logo Accueil" class="logo">Carolane LEFEBVRE</a>
 
         <div id="btnMenu">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
@@ -23,7 +22,7 @@
 
      <nav id="navList">
         <ul>
-            <li><a href="liste-projets.html">Apps</a></li>
+            <li><a class="is_active" href="liste-projets.html">Apps</a></li>
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="lang/en/home.html">🇺🇸</a></li>
             <div class="flex-item" style="display:flex;">
@@ -36,7 +35,7 @@
                         </path>  
                     </svg>
                 </a></li>
-                
+
                 <li><a href="https://www.linkedin.com/in/carolane-lefebvre/">
                     <svg viewBox="0 0 24 24" class="w-5 h-5 mr-1 -ml-1.5 astro-BREAU4GY" astro-icon="tabler:brand-linkedin" width="25" height="25">
                         <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 
@@ -49,37 +48,54 @@
         </ul>
      </nav>
 
-    <section id="content">
-        <header>
-            <img src="assets/images/clfbv.jpeg" alt="Photo de profil">
-            <h1>CAROLANE LEFEBVRE</h1>
-            <h3>Développeuse mobile - iOS</h3>
-        </header>
-        
-        <div class="button-section">
-            <div class="button-item">
-                <a href="https://github.com/CarolaneLFBV">Github</a>
-            </div>
-            <div class="button-item">
-                <a href="https://www.linkedin.com/in/carolane-lefebvre/">LinkedIn</a>
+     <section id="content">
+        <div class="card-theme">
+            <h1>Apps</h1>
+
+            <div class="section-cardboard">
+                <div class="cardbox">
+                    <a href="#">
+                        <img src="assets/images/projects/recipit.png" alt="Logo application iOS RecipIT">
+                        <h3>Recip'IT</h3>
+                        <p>Application de recette de cuisine.</p>
+                        <div class="tag-section">
+                            <div class="tag-item">📱 iOS</div>
+                            <div class="tag-notAS">❌ Apple Store</div>
+                        </div>
+                        <span>plus...</span>
+                    </a>
+                </div>
+
+                <div class="cardbox">
+                    <a href="#">
+                        <img src="assets/images/projects/FruitSearcher.png" alt="Logo application iOS FruitSearcher">
+                        <h3>FruitSearcher</h3>
+                        <p>Application de fruits avec IA.</p>
+                        <div class="tag-section">
+                            <div class="tag-item">📱 iOS</div>
+                            <div class="tag-notAS">❌ Apple Store</div>
+                        </div>
+                        <span>plus...</span>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="section-cardboard">
-            <div class="cardbox">
-                <h4>2</h4>
-                <p>Applications iOS</p>
-            </div>
-            <div class="cardbox">
-                <h4>Apple</h4>
-                <p>Environnement de travail</p>
-            </div>
-            <div class="cardbox">
-                <h4>Dog</h4>
-                <p>Lover 🐶</p>
-            </div>
+        <div class="card-theme">
+            <h1>Site Internet</h1>
+            <div class="section-cardboard">
+                <div class="cardbox">
+                    <a href="index.html">
+                        <img src="assets/images/projects/website_lefebvre.png" alt="Logo site internet Carolane LEFEBVRE">
+                        <h3>Portfolio</h3>
+                        <p>Portfolio de Carolane LEFEBVRE</p>
+                        <div class="tag-section">
+                            <div class="tag-item">🌐 Site Internet</div>
+                        </div>
+                    </a>
+                </div>
         </div>
-    </section>
+     </section>
 
     <footer id="footer">
         <p> © 2022 | Site web développé par Carolane LEFEBVRE 👋 </p>
