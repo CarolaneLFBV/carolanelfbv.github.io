@@ -55,7 +55,7 @@ hr {
 
 .subtitle {
     font-style: italic;
-    color: gray;
+    color: #DFDFDF;
 }
 
 .banner-img {
@@ -68,8 +68,8 @@ hr {
     justify-content: center;
 }
 
-.social-icon {
-    width: 2rem;
+.social-name:hover {
+    color: #7367F0;
 }
 
 .social-item {
@@ -122,7 +122,7 @@ hr {
 
 /* ------- MEDIA SCREEN ------- */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
 
     hr {
         display: none;
@@ -144,6 +144,10 @@ hr {
         margin-right: .5rem;
     }
 
+    .social-icon {
+        width: 2rem;
+    }
+
     .informations {
         display: flex;
         flex-direction: row;
@@ -155,7 +159,7 @@ hr {
         display: block;
         width: .1rem;
         border-radius: 1rem;
-        background-color:  #DFDFDF;
+        background-color: #DFDFDF;
     }
 
     .about, .apps {
