@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* ------- GLOBAL ------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+footer {
+    padding: 3rem 0rem 0rem 00rem;
+    text-align: center;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin: auto;
+    width: 70%;
+    opacity: 0.2;
+}
+
+.content {
+    margin: 2.5rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.banner, .apps {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.horizontal-line { 
+    display: none;
+}
+
+/* ------- BANNER ------- */
+.banner {
+    padding: 1rem;
+}
+
+.subtitle {
+    font-style: italic;
+    color: gray;
+}
+
+.banner-img {
+    margin: auto;
+    width: 12rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 2rem;
+}
+
+.social-item {
+    padding: .5rem;
+}
+
+/* ------- ABOUT ------- */
+.about {
+    text-align: center;
+    padding: 1rem;
+}
+
+.presentation-list {
+    list-style: none;
+}
+
+.presentation-item {
+    margin: 0.5rem;
+}
+
+.github-link {
+    font-size: 1rem;
+    color: #7367F0;
+}
+
+/* ------- APPS ------- */
+
+.item-img {
+    width: 5rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem
+}
+
+.app-item {
+    background-color: #DFDFDF;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-text {
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.item-detail {
+    font-size: .8rem;
+}
+
+
+/* ------- MEDIA SCREEN ------- */
+
+@media screen and (min-width: 900px) {
+
+    hr {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 10rem 5rem 10rem;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .title-left {
+        margin-right: .5rem;
+    }
+
+    .informations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+    }
+
+    .horizontal-line {
+        display: block;
+        width: .1rem;
+        border-radius: 1rem;
+        background-color:  #DFDFDF;
+    }
+
+    .about, .apps {
+        text-align: left;
+    }
+
+    .apps {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .dashboard-items {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+    }
+
+    .app-item {
+        margin-right: 1rem;
+        background-color: white;
+    }
+
+    .item-img {
+        width: 5rem;
+        border-radius: 1rem;
+        margin-right: 0.5rem
+    }
+
+    .item-text {
+        display: none;
+    }
+
+}
