@@ -49,8 +49,6 @@ a {
 
 .content#content-blur.active {
     filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
 }
 
 #popup {
@@ -246,7 +244,7 @@ h3 {
         width: 310px;
         padding: 2rem;
     }
-    
+
     header {
         flex-direction: column;
         text-align: center;
