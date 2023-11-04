@@ -45,6 +45,76 @@ a {
     color: var(--text-color);
 }
 
+/* ----------- Popup ----------- */
+
+.content#content-blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup {
+    position: fixed;
+    background-color: var(--background-color);
+    border-radius: 1.5rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(255, 255, 255, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* ----------- Code Snippet ----------- */
+pre { 
+    background-color: #1a1a1a; 
+    border: 0px solid #ccc; 
+    padding: 0px; 
+    margin-bottom: 0px; 
+} 
+
+pre code { 
+    /*display: block; */
+    color: #a9bcbc; 
+    line-height: 1.4em; 
+    font-size: 0.95em; 
+    white-space: pre; 
+}
+
+pre code .keyword { 
+    color: #e73289; 
+} 
+
+pre code .type { 
+    color: #8281ca; 
+} 
+
+.box { 
+    padding: 20px; 
+    margin: 0 auto; 
+    display: block; 
+    border-radius: 8px; 
+    background-color: #1a1a1a; 
+    border: 0px solid #ccc; 
+}
+
+button {
+    padding: 0.5rem;
+    margin: 1rem 0rem;;
+    background-color: white;
+    border: #040401 solid 1px;
+    border-radius: 1rem;
+}
+
 /* ----------- Navigation Bar ----------- */
 .nav-ul{
     list-style: none;
@@ -60,6 +130,7 @@ a {
     margin: var(--margin-padding);
     font-size: var(--normal-size);
     font-weight: var(--xbold-weight);
+    cursor: pointer;
 }
 
 .nav-li:hover, a:hover {
@@ -171,6 +242,11 @@ h3 {
         margin: 0rem;;
     }
 
+    #popup {
+        width: 310px;
+        padding: 2rem;
+    }
+    
     header {
         flex-direction: column;
         text-align: center;
