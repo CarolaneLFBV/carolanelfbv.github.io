@@ -1,193 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* ------- GLOBAL ------- */
+:root {
+    --title-size: 3rem;
+    --big-size: 1.5rem;
+    --normal-size: 1.2rem;
+    --smaller-size: 1.1rem;
+
+    --medium-weight: 400;
+    --bold-weight: 500;
+    --xbold-weight: 600;
+
+    --margin-padding: 1rem;
+    --bigger-margin-padding: 2rem;
+
+    --background-color: #040401;
+    --text-color: #F8F8E2;
+    --primary-color: #7372DF;
+    --secondary-color: #191906;
+    --accent-color: #3B37C5; /*#2E2BBF*/
+
+}
 
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-}
-
-footer {
-    padding: 3rem 0rem 0rem 00rem;
-    text-align: center;
+    font-family: 'Popping', sans-serif;
+    background-color: var(--background-color);
 }
 
 a {
-    display: flex;
+    color: var(--text-color);
     text-decoration: none;
-    color: black;
 }
 
-hr {
-    margin: auto;
-    width: 70%;
-    opacity: 0.2;
-}
+/* ----------- Background Content ----------- */
 
 .content {
-    margin: 2.5rem;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 2rem;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    margin: var(--bigger-margin-padding);
+    padding: var(--bigger-margin-padding);
+    color: var(--text-color);
 }
 
-.banner, .apps {
+/* ----------- Navigation Bar ----------- */
+.nav-ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left-side, .nav-right-side {
+    display: flex;
+}
+
+.nav-li {
+    margin: var(--margin-padding);
+    font-size: var(--normal-size);
+    font-weight: var(--xbold-weight);
+}
+
+.nav-li:hover, a:hover {
+    color: var(--primary-color);
+}
+
+/* ----------- Header ----------- */
+header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: var(--bigger-margin-padding);
+}
+
+.title{
     display: flex;
     flex-direction: column;
-    text-align: center;
-}
-
-.horizontal-line { 
-    display: none;
-}
-
-/* ------- BANNER ------- */
-.banner {
-    padding: 1rem;
-}
-
-.subtitle {
-    font-style: italic;
-    color: #7367F0;
-}
-
-.banner-img {
-    margin: auto;
-    width: 12rem;
-}
-
-.socials {
-    display: flex;
     justify-content: center;
 }
 
-.social-name:hover {
-    color: #7367F0;
+h1 {
+    margin: var(--margin-padding) 0rem;
+    font-size: var(--title-size);
 }
 
-.social-item {
-    padding: .5rem;
+.title-left, .title-right {
+    margin: 0.3rem 0rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
 }
 
-/* ------- ABOUT ------- */
-.about {
-    text-align: center;
-    padding: 1rem;
+h2 {
+    font-size: var(--normal-size);
+    font-weight: var(--medium-weight);
+    font-style: italic;
 }
 
-.presentation-list {
+/* ----------- Container ----------- */
+.container, .about, .apps {
+    display: flex;
+    padding: 3rem;
+}
+
+.container {
+    justify-content: space-evenly;
+}
+
+/* -- About & Apps -- */
+
+.about-title, .apps-title {
+    font-weight: var(--xbold-weight);
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+.about-info-ul, .apps-list {
+    display: flex;
+    padding: var(--margin-padding);
+}
+
+.about-info-li, .apps-item {
     list-style: none;
+    font-size: var(--normal-size);
+    margin: var(--margin-padding);
 }
 
-.presentation-item {
-    margin: 0.5rem;
+/* -- About -- */
+
+.about, .apps{
+    flex-direction: column;
 }
 
-/* ------- APPS ------- */
-
-.item-img {
-    width: 4rem;
-    border-radius: 1rem;
-    margin-right: 0.5rem
+.about-intro {
+    margin: var(--margin-padding) 0rem;
+    font-size: var(--normal-size);
 }
 
-.app-item {
-    background-color: #DFDFDF;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.accent-text {
+    color: var(--accent-color);
 }
 
-.item-text {
-    text-align: start;
+/* -- Apps -- */
+
+.apps-item {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
-.item-detail {
-    font-size: .8rem;
+h3 {
+    font-size: var(--normal-size);
 }
 
+.app-img {
+    width: 5rem;
+    border-radius: 0.8rem;
+    margin: var(--margin-padding);
+}
 
-/* ------- MEDIA SCREEN ------- */
+/* ----------- Media screen ----------- */
 
-@media screen and (min-width: 600px) {
-
-    hr {
-        display: none;
-    }
-
+@media screen and (max-width: 600px) {
+    
     .content {
-        display: flex;
+        padding: 0rem;
+        margin: 0rem;;
+    }
+
+    header {
         flex-direction: column;
-        margin: 5rem 10rem 5rem 10rem;
+        text-align: center;
+        align-items: center;
     }
 
-    h1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    img {
+        width: 15rem;
+        margin: 3rem;
     }
 
-    .title-left {
-        margin-right: .5rem;
-    }
-
-    .social-icon {
-        width: 2rem;
-    }
-
-    .informations {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-top: 3rem;
-    }
-
-    .horizontal-line {
-        display: block;
-        width: .1rem;
-        border-radius: 1rem;
-        background-color: #DFDFDF;
-    }
-
-    .about, .apps {
-        text-align: left;
-    }
-
-    .apps {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .dashboard {
+    .container, .apps-list{
         flex-direction: column;
+        align-items: center;
     }
 
-    .dashboard-items {
-        display: flex;
-        flex-direction: row;
-        margin-top: 1.5rem;
+    .about-title, .apps-title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1050px) {
+    .title {
+        padding-right: 5rem;
     }
 
-    .app-item {
-        margin-right: 1rem;
-        background-color: white;
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    .item-img {
-        width: 5rem;
-        border-radius: 1rem;
-        margin-right: 0.5rem
-    }
-
-    .item-text {
-        display: none;
-    }
-
 }
