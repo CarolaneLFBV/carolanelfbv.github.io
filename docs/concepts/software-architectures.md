@@ -18,7 +18,7 @@ Now, if you are ready to dive in, let's do it!
 
 ## 1. Monolithic Architecture (MA)
 
-The Monolithic Architecture is the traditional architecture type, and is used in most application. The architecture is based on building the entire application as a single, unified codebase. All components (UI, business logic, etc.) are integrated and deployed as one unit.
+The Monolithic Architecture is the traditional architecture type, and is used in most application. The architecture is based on `building the entire application as a single, unified codebase`. All components (UI, business logic, etc.) are integrated and deployed as one unit.
 
 ### Key Concepts
 
@@ -29,21 +29,21 @@ The Monolithic Architecture is the traditional architecture type, and is used in
 ### Benefits
 
 - **Simplicity:** Easier to develop, test, and deploy.
-- **Performance:** Since ****everything runs within the same process, it makes the internal communication between components faster.
+- **Performance:** Since components run within the same process, it makes the internal communication between components faster.
 - **Consistency:** Unified set of technologies, frameworks, and libraries makes easier to understand and maintain the codebase.
 
 ### Drawbacks
 
-- **Scalability** **Limits**: Scaling a Monolithic Architecture means replicating the entire system, even if only one part needs more resources.
-- **Slow** **Development** **Cycles**: Changing one part of the system requires re-deployment of the entire app, which can slow down development.
-- **Tight** **Coupling**: Dependencies between components make it harder to adopt new technologies or modify specific parts of the app without risking the whole system.
+- **Scalability Limits**: Scaling a Monolithic Architecture means replicating the entire system, even if only one part needs more resources.
+- **Slow Development Cycles**: Changing one part of the system requires re-deployment of the entire app, which can slow down development.
+- **Tight Coupling**: Dependencies between components make it harder to adopt new technologies or modify specific parts of the app without risking the whole system.
 
 ### Use Cases
 
-- **Startups** or **small** **projects** with limited complexity.
+- **Startups** or **small projects** with limited complexity.
 
 ## 2. Service-Oriented Architecture (SOA)
-The Service-Oriented Architecture use a pattern where different services perform distinct business functions and communicate through a central Enterprise Service Bus (ESB).
+The Service-Oriented Architecture use a pattern where `different services perform distinct business functions` and communicate through a central `Enterprise Service Bus (ESB)`.
 
 ### Key Concepts
 
@@ -59,42 +59,42 @@ The Service-Oriented Architecture use a pattern where different services perform
 
 ### Drawbacks
 
-- **Complex** **Infrastructure**: The ESB adds complexity to the architecture, and can lead to performance bottlenecks.
-- **Scalability** **Limitations**: The ESB can become a single point of failure and a bottleneck, limiting scalability and resilience of the system.
-- **Slower** **Development**: Protocols like SOAP and XML, and governance often make development slower.
+- **Complex Infrastructure**: The ESB adds complexity to the architecture, and can lead to performance bottlenecks.
+- **Scalability Limitations**: The ESB can become a single point of failure and a bottleneck, limiting scalability and resilience of the system.
+- **Slower Development**: Protocols like SOAP and XML, and governance often make development slower.
 
 ### Use Cases
 
-- Organizations with **multiple** **business domains** and **legacy** **systems**.
+- Organizations with **multiple business domains** and **legacy systems**.
 
 ## 3. Microservices Architecture
-The Microservices Architecture is build on the principles of SOA but instead of having different services performing distinct business functions, each service here is independently deployable and handle specific, single functions. Each microservice can be developed, deployed, and scaled independently.
+The Microservices Architecture is build on the principles of SOA but instead of having different services performing distinct business functions, each service here is `independently deployable and handle specific, single functions`. Each microservice can be developed, deployed, and scaled independently.
 
 ### Key Concepts
 
-- **Fine-Grained** **Services**: Each service is small and focused on a single task (e.g. User Auth)
-- **Independent** **Deployability**: Each microservice can be deployable separately → rapid updates and scaling.
-- **Polyglot** **Persistence** **and** **Development**: Different services can use different languages, databases, etc. based on what best fits the task, without any concern impacting another service.
+- **Fine-Grained Services**: Each service is small and focused on a single task (e.g. User Auth)
+- **Independent Deployability**: Each microservice can be deployable separately → rapid updates and scaling.
+- **Polyglot Persistence and Development**: Different services can use different languages, databases, etc. based on what best fits the task, without any concern impacting another service.
 
 ### Benefits
 
 - **Scalability**: Each service can be scaled independently, which can optimized resource usage.
-- **Fault** **Isolation**: If one service fails, it doesn’t impact the rest of the system.
-- **Faster** **Development** **Cycles**: Since they are all independent, it facilitates continuous delivery and rapid iteration.
+- **Fault Isolation**: If one service fails, it doesn’t impact the rest of the system.
+- **Faster Development Cycles**: Since they are all independent, it facilitates continuous delivery and rapid iteration.
 
 ### Drawbacks
 
-- **Operational** **Complexity**: Managing multiple independent services increases operational overhead, requiring DevOps practices and infrastructure.
-- **Data** **Consistency** **Challenges**: Ensuring data consistency across services with separate databases can be challenging.
-- **Increased** **Debugging** **Complexity**: Same as Data Consistency, tracking issues across multiple services can be difficult.
+- **Operational Complexity**: Managing multiple independent services increases operational overhead, requiring DevOps practices and infrastructure.
+- **Data Consistency Challenges**: Ensuring data consistency across services with separate databases can be challenging.
+- **Increased Debugging Complexity**: Same as Data Consistency, tracking issues across multiple services can be difficult.
 
 ### Use Cases
 
-- **Large, scalable applications** such ****as ****E-commerce platforms, social media apps, etc.
+- **Large, scalable applications** such as E-commerce platforms, social media apps, etc.
 - Well-suited for **cloud-native applications** where each service can be independently scaled and managed.
 
 ## 4. Data-Oriented Architecture (DOA)
-The Data-Oriented Architecture is centered around data management and data flow. This architecture is typically seen in applications where data is the primary focus.
+The Data-Oriented Architecture is centered around `data management and data flow`. This architecture is typically seen in applications where data is the primary focus.
 
 ### Key Concepts
 
@@ -110,15 +110,15 @@ The Data-Oriented Architecture is centered around data management and data flow.
 
 ### Drawbacks
 
-- **Data** **Bottlenecks**: Centralized data processing can become a bottleneck, especially in real-time scenarios with large data volume.
-- **Complex** **ETL**: Moving and transforming data for different purposes requires complex pipelines and can add latency.
+- **Data Bottlenecks**: Centralized data processing can become a bottleneck, especially in real-time scenarios with large data volume.
+- **Complex ETL**: Moving and transforming data for different purposes requires complex pipelines and can add latency.
 
 ### Use Cases
 
 - **Machine Learning** and **AI**
 
 ## 5. Event-Driven Architecture (EDA)
-The Event-Driven Architecture is centered around events or state changes. Services react to events (e.g. user registered) and perform specific actions in response.
+The Event-Driven Architecture is centered around `events or state changes`. Services react to events (e.g. user registered) and perform specific actions in response.
 
 ### Key Concepts
 
@@ -129,7 +129,7 @@ The Event-Driven Architecture is centered around events or state changes. Servic
 ### Benefits
 
 - **Responsiveness**: EDA allows applications to respond in real-time to changes. It is ideal for user-facing applications requiring quick feedback.
-- **Scalability** **and** **Flexibility**: Independent event listeners can be scaled independently based on load, and new listeners can be added without impacting.
+- **Scalability and Flexibility**: Independent event listeners can be scaled independently based on load, and new listeners can be added without impacting.
 - Fault Tolerance: Services are loosely couples and can operate independently, making the architecture resilient to potential failure from an individual service.
 
 ### Drawbacks
