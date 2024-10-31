@@ -6,7 +6,7 @@ hero:
   name: "CodeKeep"
   text: "Documentation"
   image:
-    src: public/images/okeep.png
+    src: /okeep.png
     alt: Okeep Generated Image
   tagline: Dive in my Documentation Journey in Development!
   actions:
