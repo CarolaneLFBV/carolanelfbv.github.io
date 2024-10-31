@@ -49,8 +49,9 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/CarolaneLFBV' }
-    ]
+    footer: {
+      message: "",
+      copyright: "Copyright © 2020-present Carolane Lefebvre 💻"
+    }
   }
 })

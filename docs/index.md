@@ -5,14 +5,17 @@ layout: home
 hero:
   name: "CodeKeep"
   text: "Documentation"
+  image:
+    src: assets/images/okeep.png
+    alt: Okeep Generated Image
   tagline: Dive in my Documentation Journey in Development!
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Let's dive in!
       link: /welcome-page
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Contact Me
+      link: /contact
 
 features:
   - title: Feature A
