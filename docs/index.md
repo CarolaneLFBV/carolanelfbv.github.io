@@ -6,7 +6,7 @@ hero:
   name: "CodeKeep"
   text: "Documentation"
   image:
-    src: assets/images/okeep.png
+    src: public/images/okeep.png
     alt: Okeep Generated Image
   tagline: Dive in my Documentation Journey in Development!
   actions:
@@ -18,11 +18,14 @@ hero:
       link: /contact
 
 features:
-  - title: Feature A
+  - icon: 💻
+    title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - icon: 💻
+    title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - icon: 💻
+    title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
