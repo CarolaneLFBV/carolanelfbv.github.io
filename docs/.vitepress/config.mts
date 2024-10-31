@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "CodeKeep",
   description: "A Vitepress Site For Documentation",
-  srcDir: "./src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
