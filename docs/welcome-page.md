@@ -15,9 +15,13 @@ const members = [
 <VPTeamMembers size="small" :members="members" style="display: flex; justify-content: center;"/>
 
 ## What are we doing here?
-This site is my digital archive: a collection of development notes, resources, and insights I’ve gathered on my journey. The goal is to **offer a space where developers at all levels, from juniors needing solid foundations to seniors refreshing key concepts, can find valuable, organized information.**
+Welcome to my digital archive—a space where I share insights, resources, and discoveries from my development journey. This site explores various facets of development and technology, covering foundational concepts, architectures, frameworks, programming languages, and AI. It’s designed as a practical resource for developers of all levels who seek organized, useful information rather than basic tutorials.
 
-Here, you’ll find resources on `concepts and guidelines` like Software Architectures, SOLID Principles, Databases, `frameworks`, and practical guides for `tools` like Docker and Xcode, etc. I’ve also included sections on `programming languages` and the latest development practices, all aimed at making complex concepts easier to revisit and apply. This site is an evolving collection of knowledge—because no matter our experience, we all benefit from a place to look things up and keep learning.
+Besides of programming languages and frameworks, you will find as well sections on essential tools like Docker, Xcode, and more. This evolving collection aims to make revisiting and applying complex topics straightforward—because whether we’re learning or refreshing, a go-to reference benefits us all.
+
+::: warning
+For frameworks and programming languages, you’ll find guidance on specific use cases not an entire tutorial about the language or framework.
+:::
 
 ## I'd like to contribute, how can I help?
 Please visit the [contact page](/contact.md) for more information!

@@ -137,3 +137,11 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Component: HTML Image
+ * -------------------------------------------------------------------------- */
+ .small-image {
+  width: 20rem;
+  height: auto;
+  padding: 1rem;
+ }
