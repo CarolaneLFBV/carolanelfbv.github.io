@@ -22,7 +22,6 @@ Clients should `not be forced to depend on interfaces they do not use`. Instead 
 The Single Responsibility Principle is a software design principle where `each class should have a single responsibility or task` and should not be responsible for multiple unrelated tasks.
 
 ### Example
-
 ```swift
 class User {
     var name: String

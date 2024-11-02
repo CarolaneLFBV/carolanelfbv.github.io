@@ -27,6 +27,7 @@ export default defineConfig({
         text: 'Tools',
         items: [
           { text: 'List of Tools', link: 'tools/tools-list.md' },
+          { text: 'CD (Continuous Deployment)', link: 'tools/cd.md' },
           { text: 'CI (Continuous Implementation)', link: 'tools/ci.md' },
           { text: 'Xcode', link: 'tools/xcode.md' },
           { text: 'Docker', link: 'tools/docker.md' }

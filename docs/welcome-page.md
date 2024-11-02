@@ -19,12 +19,13 @@ Welcome to my digital archive—a space where I share insights, resources, and d
 
 Besides of programming languages and frameworks, you will find as well sections on essential tools like Docker, Xcode, and more. This evolving collection aims to make revisiting and applying complex topics straightforward—because whether we’re learning or refreshing, a go-to reference benefits us all.
 
-::: warning
-For frameworks and programming languages, you’ll find guidance on specific use cases not an entire tutorial about the language or framework.
+:::warning 
+The notes and resources here are based on my own experiences and learning journey, rather than exhaustive guides. 
+I focus on practical insights and use cases rather than in-depth tutorials. 
+For deeper exploration, I’ve included sources and links whenever possible to guide you to more detailed resources. 
 :::
 
 ## I'd like to contribute, how can I help?
 Please visit the [contact page](/contact.md) for more information!
-
 
 Enjoy exploring, and happy coding 💻!
