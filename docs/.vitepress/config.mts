@@ -38,7 +38,9 @@ export default defineConfig({
         items: [
           { text: 'List of Programming Languages', link: 'programming-languages/proglangs-list.md' },
           { text: 'Swift', link: 'programming-languages/swift' },
-          { text: 'Typescript', link: 'programming-language/typescript' }
+          { text: 'Typescript', link: 'programming-language/typescript', items: [
+            { text: 'Types vs Interfaces', link: 'programming-languages/typescript/types-vs-interfaces.md' },
+          ]}
         ]
       },
       {

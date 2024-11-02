@@ -1,7 +1,7 @@
 # SOLID Principles
 The SOLID Principles are a set of five design guidelines that help developers create more maintainable, and good code. 
 
-## TL:DR
+## TL;DR
 
 ### S - Single Responsibility Principle (SRP)
 Each class or module should have `one responsibility only`. This means that a class or module should only have one reason to change.
