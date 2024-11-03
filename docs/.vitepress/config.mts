@@ -19,6 +19,7 @@ export default defineConfig({
         text: 'Concepts',
         items: [
           { text: 'List of Concepts', link: 'concepts/concepts-list.md' },
+          { text: 'Design Patterns', link: 'concepts/design-patterns.md'},
           { text: 'Software Architectures', link: 'concepts/software-architectures.md' },
           { text: 'SOLID Principles', link: 'concepts/solid-principles.md' }
         ]
@@ -29,15 +30,12 @@ export default defineConfig({
           { text: 'List of Tools', link: 'tools/tools-list.md' },
           { text: 'CD (Continuous Deployment)', link: 'tools/cd.md' },
           { text: 'CI (Continuous Implementation)', link: 'tools/ci.md' },
-          { text: 'Xcode', link: 'tools/xcode.md' },
-          { text: 'Docker', link: 'tools/docker.md' }
         ]
       },
       {
         text: 'Programming Languages',
         items: [
           { text: 'List of Programming Languages', link: 'programming-languages/proglangs-list.md' },
-          { text: 'Swift', link: 'programming-languages/swift' },
           { text: 'Typescript', link: 'programming-language/typescript', items: [
             { text: 'Types vs Interfaces', link: 'programming-languages/typescript/types-vs-interfaces.md' },
           ]}
@@ -47,8 +45,6 @@ export default defineConfig({
         text: 'Frameworks',
         items: [
           { text: 'List of Frameworks', link: 'frameworks/frameworks-list.md' },
-          { text: 'SwiftUI', link: 'frameworks/swiftui' },
-          { text: 'Nuxt', link: 'frameworks/nuxt' }
         ]
       }
     ],
