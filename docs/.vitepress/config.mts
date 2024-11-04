@@ -8,10 +8,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Concepts', link: 'concepts/concepts-list' },
-      { text: 'Tools', link: 'tools/tools-list' },
-      { text: 'Programming Languages', link: 'programming-languages/proglangs-list' },
-      { text: 'Frameworks', link: 'frameworks/frameworks-list' },
+      { text: 'Documentation', link: '/welcome-page' },
+      { text: 'Contact', link: '/contact' }
     ],
 
     sidebar: [
@@ -19,7 +17,11 @@ export default defineConfig({
         text: 'Concepts',
         items: [
           { text: 'List of Concepts', link: 'concepts/concepts-list.md' },
-          { text: 'Design Patterns', link: 'concepts/design-patterns.md'},
+          { text: 'Design Patterns', items: [
+            {text: 'Creational Patterns', link: 'concepts/design-patterns/creational-patterns'},
+            {text: 'Structural Patterns', link: 'concepts/design-patterns/structural-patterns'},
+            {text: 'Behavioral Patterns', link: 'concepts/design-patterns/behavioral-patterns'}
+          ]},
           { text: 'Software Architectures', link: 'concepts/software-architectures.md' },
           { text: 'SOLID Principles', link: 'concepts/solid-principles.md' }
         ]

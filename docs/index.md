@@ -18,14 +18,14 @@ hero:
       link: /contact
 
 features:
-  - icon: 💻
-    title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - icon: 💻
-    title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - icon: 💻
-    title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 📱
+    title: iOS Engineer
+    details: Building sleek, user-centric iOS apps with a focus on performance and reliability.
+  - icon: 🌐
+    title: Web & Mobile Developer
+    details: Developing web and mobile solutions, leveraging the latest technologies and frameworks.
+  - icon: 📚
+    title: Lifelong Learner 
+    details: Driven by a passion for continuous learning, currently pursuing a Master’s in Software Engineering.
 ---
 
