@@ -16,7 +16,6 @@ export default defineConfig({
       {
         text: 'Concepts',
         items: [
-          { text: 'List of Concepts', link: 'concepts/concepts-list.md' },
           { text: 'Design Patterns', items: [
             {text: 'Creational Patterns', link: 'concepts/design-patterns/creational-patterns'},
             {text: 'Structural Patterns', link: 'concepts/design-patterns/structural-patterns'},
@@ -29,7 +28,6 @@ export default defineConfig({
       {
         text: 'Tools',
         items: [
-          { text: 'List of Tools', link: 'tools/tools-list.md' },
           { text: 'CD (Continuous Deployment)', link: 'tools/cd.md' },
           { text: 'CI (Continuous Implementation)', link: 'tools/ci.md' },
         ]
@@ -37,8 +35,7 @@ export default defineConfig({
       {
         text: 'Programming Languages',
         items: [
-          { text: 'List of Programming Languages', link: 'programming-languages/proglangs-list.md' },
-          { text: 'Typescript', link: 'programming-language/typescript', items: [
+          { text: 'Typescript', items: [
             { text: 'Types vs Interfaces', link: 'programming-languages/typescript/types-vs-interfaces.md' },
           ]}
         ]
@@ -46,7 +43,6 @@ export default defineConfig({
       {
         text: 'Frameworks',
         items: [
-          { text: 'List of Frameworks', link: 'frameworks/frameworks-list.md' },
         ]
       }
     ],
