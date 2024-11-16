@@ -37,7 +37,12 @@ export default defineConfig({
         items: [
           { text: 'Typescript', items: [
             { text: 'Types vs Interfaces', link: 'programming-languages/typescript/types-vs-interfaces.md' },
-          ]}
+          ]
+          },
+          { text: 'Swift', items: [
+            { text: 'Structs vs Classes', link: 'programming-languages/swift/structs-vs-classes.md' },
+          ]
+          },
         ]
       },
       {
