@@ -40,7 +40,7 @@ export default defineConfig({
         text: 'iOS',
         items: [ 
           { text: 'Structs vs Classes in Swift', link: 'articles/ios/structs-vs-classes.md' },
-          //{ text: '@Binding vs. @Bindable in SwiftUI', link: '/articles/ios/structs-vs-classes.md' },            
+          { text: '@Bindable vs. @Binding in SwiftUI: What’s the difference?', link: '/articles/ios/bindable-vs-binding-swiftui.md' },            
         ],
         collapsed: true
       },
