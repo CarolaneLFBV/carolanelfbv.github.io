@@ -1,4 +1,7 @@
 # Structural Patterns
+
+*Last Updated: Dec 7, 2024*
+
 Structural patterns help organize and manage relationships between objects to form larger structures and enhance flexibility and reusability.
 
 :::warning

@@ -1,4 +1,7 @@
 # CI (Continuous Integration) with GitHub Actions
+
+*Last Updated: Dec 7, 2024*
+
 The Continuous Integration is an automated process that verifies and validates the source code automatically with each modification in the repository (push or pull request). It enables quick error detection before the code is merged into the branch.
 
 <div style="display: flex; justify-content: center;">

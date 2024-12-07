@@ -1,4 +1,7 @@
 # Behavioral Patterns
+
+*Last Updated: Dec 7, 2024*
+
 Behavioral patterns focus on communication and responsibilities between objects, making interactions more flexible and organized.
 
 :::warning

@@ -1,5 +1,7 @@
 # @Bindable vs. @Binding in SwiftUI: What’s the difference?
 
+*Last Updated: Dec 7, 2024*
+
 SwiftUI offers powerful tools to manage data flow between views, and two key players in this system are **@Binding** and **@Bindable**. While both serve to connect data across views, they address slightly different use cases.
 
 ## TL;DR

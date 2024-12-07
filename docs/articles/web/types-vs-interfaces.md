@@ -1,9 +1,10 @@
 # Types vs. Interfaces in Typescript
 
+*Last Updated: Dec 7, 2024*
+
+
 In TypeScript, you have two options for defining type: `types` and `interfaces`. However, you might have already asked yourself: "Should I use types or interfaces?"
-
 Like many programming languages and situations: **it depends**. In some cases, one option has cleaver advantage over the other, but they are still interchangeable.
-
 Let's dive in!
 
 ## TL;DR

@@ -1,4 +1,7 @@
 # SOLID Principles
+
+*Last Updated: Dec 7, 2024*
+
 The SOLID Principles are a set of five design guidelines that help developers create more maintainable, and good code. 
 
 ## TL;DR

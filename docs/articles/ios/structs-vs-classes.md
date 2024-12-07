@@ -1,5 +1,7 @@
 # Structs vs. Classes in Swift
 
+*Last Updated: Dec 7, 2024*
+
 In Swift, both `struct` and `class` are blueprints to create objects. These objects can hold data (like a person's name or age) and define behavior (like calculating something or doing an action). However, how they behave when you use them in your code is different.
 
 ## TL;DR

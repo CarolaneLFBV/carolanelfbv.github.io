@@ -1,4 +1,7 @@
 # Software Architectures
+
+*Last Updated: Dec 7, 2024*
+
 Software architecture is the high-level structure of a software system, providing a blueprint that guides its design and development. It encompasses the system's major components, their relationships, and interactions, along with the principles and guidelines governing them. The role of software architecture is crucial because it shapes the foundation of the system, ensuring it meets both functional and non-functional requirements, such as performance, scalability, security, and maintainability.
 
 Software architecture can follow different patterns, depending on the system's requirements and constraints.

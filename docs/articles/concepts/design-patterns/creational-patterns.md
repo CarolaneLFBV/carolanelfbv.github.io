@@ -1,4 +1,7 @@
 # Creational Patterns
+
+*Last Updated: Dec 7, 2024*
+
 Creational patterns help manage and streamline object creation, making it more flexible, efficient, and suitable for various situations.
 
 :::warning

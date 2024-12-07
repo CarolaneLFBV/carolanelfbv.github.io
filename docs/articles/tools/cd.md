@@ -1,4 +1,7 @@
 # CD (Continuous Deployment) with GitHub Actions
+
+*Last Updated: Dec 7, 2024*
+
 Continuous Deployment (CD) automates the deployment of code to a production environment, allowing teams to deliver new features, fixes, and updates to users quickly. This tutorial builds on our CI setup by showing how to automatically deploy code once it has passed the CI checks.
 
 <div style="display: flex; justify-content: center;">
