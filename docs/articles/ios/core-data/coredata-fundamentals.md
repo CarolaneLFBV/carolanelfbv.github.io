@@ -12,11 +12,9 @@ Resources:
 In our previous article, we explored why Core Data remains a powerful tool for managing data in iOS apps. Before we dive in, I think it's important to understand the building blocks of Core Data. In this we'll demystify Core Data, and prepare you to set up Core Data in your own project.
 
 ## What is Core Data?
-
 `Core Data` is an object graph and Apple's framework for managing and persisting data in iOS and macOS applications. Introduced in `iOS 3.0`, it simplifies storing data using relational entity-attribute model, while handling the complexity of SQL behind the scenes.
 
 Core Data lets you:
-
 - Model your app's data as objects (entities and attributes) while managing their relationships.
 - Persist and query data in formats like `SQLite`, `XML`, or `binary` with minimal setup.
 - Abstract database management, allowing you to work with data in an object-oriented way without needing to write SQL.
@@ -82,6 +80,7 @@ Let’s map this code to Core Data’s workflow:
 
 ### Managed Object Context
 The `NSManagedObjectContext` is the workspace for all data-related operations in Core Data. It's where you create, fetch, update, and delete objects. Think of it as a draft workspace: changes made in the context aren't saved to the database until you explicitly save them.
+
 *Example:*
 ```swift
 extension App.Repository {
@@ -177,8 +176,7 @@ Core Data offers different kind of relationships:
 3. **Efficient Queries:**
     Core Data lets you query data across relationships, like fetching all tasks for a specific category or all users in a group.
     
-
-### **Conclusion**
+## **Conclusion**
 Core Data is a powerful tool for managing and persisting data in iOS apps. By understanding key components like the `Persistent Container`, `Managed Object Context`, `Entities`, and `Relationships`, you’re now equipped with the foundational knowledge to build robust data models.
 
 In the next article, we’ll put this knowledge into action by setting up a Core Data model and defining entities, attributes, and relationships.
