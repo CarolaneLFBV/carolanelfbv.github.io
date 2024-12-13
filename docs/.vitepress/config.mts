@@ -41,7 +41,12 @@ export default defineConfig({
         items: [ 
           { text: 'Structs vs Classes in Swift', link: 'articles/ios/structs-vs-classes.md' },
           { text: '@Bindable vs. @Binding in SwiftUI: What’s the difference?', link: '/articles/ios/bindable-vs-binding-swiftui.md' },
-          { text: 'Understanding Extensions and Protocols in Swift', link: 'articles/ios/extension-vs-protocol.md' },            
+          { text: 'Understanding Extensions and Protocols in Swift', link: 'articles/ios/extension-vs-protocol.md' },
+          { text: 'Core Data', items: [
+            { text: 'Managing Data in iOS: Core Data vs SwiftData', link: 'articles/ios/core-data/coredata-vs-swiftdata.md' },
+            { text: 'Managing Data with Core Data: Fundamentals', link: 'articles/ios/core-data/coredata-fundamentals.md' },            { text: 'Managing Data with Core Data: Fundamentals', link: 'articles/ios/core-data/coredata-fundamentals.md' },
+          ]
+          },            
         ],
         collapsed: true
       },
