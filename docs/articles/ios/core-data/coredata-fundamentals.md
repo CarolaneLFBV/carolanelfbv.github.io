@@ -31,7 +31,8 @@ The `NSPersistentContainer` is the backbone of Core Data. It simplifies the setu
 
 *Example:*
 ```swift
-class DataController: ObservableObject {
+@Observable
+class DataController {
 		// A shared instance of the DataController
     static let shared = DataController()
 		
@@ -84,7 +85,7 @@ The `NSManagedObjectContext` is the workspace for all data-related operations in
 *Example:*
 ```swift
 extension App.Repository {
-    class Crud {
+    struct Crud {
         private let moc: NSManagedObjectContext
 
         // 1 - Initializes the class with a Managed Object Context
@@ -118,7 +119,7 @@ extension App.Repository {
 
 Let's break it down:
 1. **Initializing the Context**
-* The `Crud` class is initialized with a `NSManagedObjectContext`. By default, it uses the shared `viewContext` provided by `DataController`. This context is thread-bound (main thread) and that creating background contexts can improve performance for non-UI tasks.
+* The `Crud` struct is initialized with a `NSManagedObjectContext`. By default, it uses the shared `viewContext` provided by `DataController`. This context is thread-bound (main thread) and that creating background contexts can improve performance for non-UI tasks.
 * The context acts as the bridge between your app and the Core Data stack, enabling you to work with Core Data objects.
 2. **Enum for Error Handling**
 * The `Failed` enum defines possible errors for the CRUD operations. Each case can include additional information, such as the reason for the error.
