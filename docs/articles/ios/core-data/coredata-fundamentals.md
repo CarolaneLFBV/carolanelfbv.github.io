@@ -31,23 +31,21 @@ The `NSPersistentContainer` is the backbone of Core Data. It simplifies the setu
 
 *Example:*
 ```swift
-@Observable
-class DataController {
-		// A shared instance of the DataController
-    static let shared = DataController()
-		
-		// The Core Data container that sets up the stack
+struct PersistenceController {
+    // A shared instance of the PersistenceController
+    static let shared = PersistenceController()
+
+	// The Core Data container that sets up the stack
     let container: NSPersistentContainer
     
     // Initializes the container and loads the peristent store
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "MyAppModel")
-        
+
+        // Use an in-memory store, typically for testing
         if inMemory {
-		        // Use an in-memory store, typically for testing
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
-       
         container.loadPersistentStores(completionHandler: { (description, error) in
             if let error = error {
                 fatalError("Failed to load Core Data stack: \(error)")
