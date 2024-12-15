@@ -6,7 +6,6 @@
 Resources:
 * Apple's documentation - SwiftData: https://developer.apple.com/xcode/swiftdata/
 * iOS Data Persistence: https://bugfender.com/blog/ios-data-persistence/
-* HWS from Paul Hudson: https://www.hackingwithswift.com/books/ios-swiftui/how-to-combine-core-data-and-swiftui
 :::
 
 Managing data is a fundamental part of building iOS applications, whether it’s saving user preferences, storing offline data, or keeping track of a to-do list. Apple provides developers with two robust frameworks for handling persistent data: **Core Data** and the newly introduced **SwiftData**.

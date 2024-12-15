@@ -1,12 +1,11 @@
 # Managing Data with Core Data: Setting Up
 
-*Last Updated: Dec 13, 2024*
+*Last Updated: Dec 15, 2024*
 
 :::info
 Resources:
-* Wikipedia - Core Data: https://en.wikipedia.org/wiki/Core_Data
-* Apple's documentation - Core Data: https://developer.apple.com/documentation/coredata/
-* Wikipedia - Object Graph: https://en.wikipedia.org/wiki/Object_graph
+* Apple's Core Data project
+* HWS from Paul Hudson: https://www.hackingwithswift.com/books/ios-swiftui/how-to-combine-core-data-and-swiftui
 :::
 
 We have seen what Core Data is, why choosing it, and its fundamentals—now it's time to get it up and running in your app!
@@ -144,7 +143,6 @@ struct PersistenceController {
         return container.viewContext
     }
 }
-
 ```
 
 Here’s what it does under the hood:
