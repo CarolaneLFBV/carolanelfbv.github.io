@@ -18,7 +18,7 @@ Using Core Data in SwiftUI, you will learn how to add new tasks, fetch and displ
 
 In this article, we will follow the **MVVM design pattern** for implementing CRUD operations. The operations will be encapsulated in a **Repository**, which will handle all communication with Core Data. The **ViewModel** will act as a mediator between the **Repository** and the SwiftUI **View**, ensuring clean and modular code.
 
-If you're unfamiliar with MVVM, I recommend checking out my [Design Pattern - Structural Patterns](../../concepts/design-patterns/structural-patterns.md) article, specifically the **Model-View-ViewModel (MVVM)** section.
+If you're unfamiliar with MVVM, I recommend checking out my [Design Pattern - Structural Patterns](concepts/design-patterns/structural-patterns.md) article, specifically the **Model-View-ViewModel (MVVM)** section.
 
 :::
 
