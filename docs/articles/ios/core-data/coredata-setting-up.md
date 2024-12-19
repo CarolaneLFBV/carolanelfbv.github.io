@@ -105,7 +105,7 @@ Little reminder from the previous article! The `Persistence.swift` file typicall
 
 1. `NSPersistentContainer`: Manages the Core Data stack and connects to the persistent store (e.g., SQLite database).
 2. `NSManagedObjectContext`: Provides a workspace where you create, fetch, update, and delete data.
-3. `Persistent ****Store`: The actual file or database where data is saved.
+3. `Persistent Store`: The actual file or database where data is saved.
 
 ### How Does the Persistence File Work?
 

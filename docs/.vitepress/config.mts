@@ -45,7 +45,8 @@ export default defineConfig({
           { text: 'Core Data', items: [
             { text: 'Managing Data in iOS: Core Data vs SwiftData', link: 'articles/ios/core-data/coredata-vs-swiftdata.md' },
             { text: 'Managing Data with Core Data: Fundamentals', link: 'articles/ios/core-data/coredata-fundamentals.md' },
-            { text: 'Managing Data with Core Data: Setting Up', link: 'articles/ios/core-data/coredata-setting-up.md' },             
+            { text: 'Managing Data with Core Data: Setting Up', link: 'articles/ios/core-data/coredata-setting-up.md' },   
+            { text: 'Managing Data with Core Data: CRUD Operations', link: 'articles/ios/core-data/coredata-crud-operations.md' },             
           ]
           },            
         ],
