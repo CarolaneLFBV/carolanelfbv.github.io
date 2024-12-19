@@ -157,4 +157,4 @@ For production apps, consider to handle error instead of fatalError, since it's 
 
 To summarize: The `Persistence.swift` file sets up the Core Data stack using the `NSPersistentContainer`. It initializes the persistent store, configures an in-memory store for testing, and provides a `viewContext` for interacting with data on the main thread. This makes it easy to save, fetch, and manage your app’s data.
 
-Now that you understand the `Persistence.swift` file and how it sets up the Core Data stack, we’re ready to start working with data! In the next article, we’ll show you how to create, fetch, update, and delete data using Core Data in a SwiftUI app.
+Now that you understand the `Persistence.swift` file and how it sets up the Core Data stack, we’re ready to start working with data! In the next article, we are going to create, fetch, update, and delete data using Core Data in a SwiftUI app.
