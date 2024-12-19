@@ -87,22 +87,21 @@ struct Crud {
     }
     
     // New Creating Method
-		func create(title: String) throws {
-		  let newTodo = Todo(context: viewContext)
-		  newTodo.id = UUID()
-		  newTodo.title = title
-		  newTodo.isDone = false
+	func create(title: String) throws {
+	    let newTodo = Todo(context: viewContext)
+		newTodo.id = UUID()
+		newTodo.title = title
+		newTodo.isDone = false
 		        
-		  do {
-			  try viewContext.save()
-		  } catch {
-		     throw Failed.create(reason: error.localizedDescription)
-		  }
+		do {
+			try viewContext.save()
+		} catch {
+		    throw Failed.create(reason: error.localizedDescription)
 		}
+	}
 }
 
 ```
-
 - A new `Todo` object is initialized using the Core Data `viewContext`. The `viewContext` ensures that the new object is managed by Core Data.
 - We then set default values:
     - `id` is a unique `UUID` that is assigned to identify each task.
@@ -111,7 +110,6 @@ struct Crud {
 - After the new object is added to the `viewContext`, the `save()` method persists the changes to Core Data. If an error occurs, the custom `Failed.create`error is thrown with a description of the issue.
 
 ### How to Use the Create Method
-
 Next, we'll use this method in our `ViewModel`, which acts as the intermediate layer between the repository and the view. Here's how it looks:
 
 ```swift
@@ -141,13 +139,10 @@ By injecting the `Crud` repository into the `TodoViewModel`, we make the ViewMod
 The `repository.create` method is called with the `title` passed by the view.
 
 :::tip
-
 Little reminder that in production, consider showing an error message to the user if creating a `Todo` fails. This improves the user experience and makes your app more robust.
-
 :::
 
 ### Connecting the View
-
 To allow users to add new `Todo` items through the UI, we create an `AddTodoView` that interacts with the `TodoViewModel`. Here’s the code:
 
 ```swift
@@ -178,11 +173,8 @@ struct AddTodoView: View {
 }
 
 ```
-
 The `TextField` is bound the `newTodoTitle` state variable, which tracks the user's input. Then, the button triggers the `addTodo` private method when pressed.
-
 The `addTodo` method ensures first of all that it isn't empty before proceeding. Then, it passes the `newTodoTitle` to the `addTodo` method in the `TodoViewModel`, which then calls the repository's `create` method.
-
 The `withAnimation` block allows you to add a smooth transitions in the UI when the list of Todos updates.
 
 When the new item has been successfully added, the function clears the `TextField`.
@@ -210,7 +202,6 @@ struct ContentView: View {
 We are initializing our ViewModel in the parent view, and then passes it to our child view so we can dynamically use the same data everywhere.
 
 ## Reading Data
-
 To read data from Core Data, we use the `@FetchRequest` property wrapper provided by SwiftUI. It’s a powerful tool that fetches data directly from the Core Data store and keeps the UI in sync with any changes.
 
 ```swift
@@ -416,8 +407,8 @@ struct Crud {
             try viewContext.save()
         } catch {
             throw Failed.delete(reason: error.localizedDescription)
-		    }
 		}
+	}
  }   
 ```
 
@@ -464,7 +455,7 @@ class TodoViewModel {
         } catch {
             print("Error deleting Todos: \(error)")
         }
-		}
+	}
 }
 ```
 
