@@ -21,7 +21,7 @@ In this article, we will follow the **MVVM design pattern** for implementing CRU
 If you're unfamiliar with MVVM, I recommend checking out my `Design Pattern - Structural Patterns` article, specifically the **Model-View-ViewModel (MVVM)** section.
 :::
 
-Before we begin, make sure you have followed the [previous article]() and that your Core Data stack is set up.
+Before we begin, make sure you have followed the previous article and that your Core Data stack is set up.
 
 When you are done, let's start by implementing our `PersistentController` into our app. You need to go to your App file, and add your persistentController into your first view that is going to be loaded when the app is launched:
 
