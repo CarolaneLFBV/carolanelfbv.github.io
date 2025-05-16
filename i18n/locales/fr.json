@@ -1,0 +1,80 @@
+{
+  "app": "Keepio",
+  "appSubtitle": "Organisez vos projets avec clarté, simplicité et puissance",
+  "about": "À propos",
+  "availableSoon": "Bientôt disponible",
+  "features": "Fonctionnalités",
+  "upcoming": "Prochainement",
+  "contact": "Contact",
+  "gcu": "CGU",
+  "rights": "Tous droits réservés.",
+  "gcuTitle": "Conditions Générales d'Utilisation",
+  "portfolio": "Portfolio",
+  "projectTitle": "Organisez vos projets",
+  "projectText": "Classez vos projets en fonction de vos propres catégories",
+  "taskTitle": "Gérez vos tâches",
+  "taskText": "Grâce à une liste de tâches intégrée dans chaque projet",
+  "noteTitle": "Notez ce qui compte",
+  "noteText": "Avec une prise de note personnalisée dans chaque projet",
+  "graphTitle": "Visualisez vos progrès",
+  "graphText": "Grâce à des statistiques et votre graphe unique",
+  "styleTitle": "Application minimaliste",
+  "styleText": "Une interface simple et intuitive",
+  "syncTitle": "Synchronisation",
+  "syncText": "Disponible sur tous vos appareils",
+  "form": {
+    "title": "Contactez-nous",
+    "subtitle": "Un bug, une suggestion ou une question ? N'hésitez pas à nous contacter grâce à ce formulaire.",
+    "email": "Email",
+    "name": "Nom",
+    "subject": "Sujet",
+    "message": "Message",
+    "clear": "Tout Effacer",
+    "send": "Envoyer"
+  },
+  "gcuSection": {
+    "lastUpdated": "Dernière mise à jour : 16 mai 2025",
+    "thankYou": "Merci d'utiliser l'application Keepr (ou Keepio). Nous accordons une grande importance à la protection de votre vie privée.",
+    "dataCollectedTitle": "Données collectées",
+    "dataCollected": "Nous ne collectons aucune donnée personnelle identifiable (nom, email, etc.). L'application utilise uniquement :",
+    "dataCollectionList": [
+      "Les noms de projets, tâches et notes que vous créez",
+      "Leur statut, date de création et progression"
+    ],
+    "storageTitle": "Stockage des données",
+    "storageText": "Vos données sont stockées localement sur votre appareil et dans votre iCloud privé, via CloudKit. Elles ne sont ni partagées, ni accessibles au développeur.",
+    "rightsTitle": "Vos droits",
+    "rightsText": "Conformément au RGPD, vous pouvez :",
+    "rightsList": [
+      "Supprimer vos données à tout moment depuis l'app",
+      "Désactiver la synchronisation iCloud via vos réglages iOS"
+    ],
+    "contactTitle": "Contact",
+    "contactText": "Pour toute question, utilisez le formulaire de contact sur notre page d'accueil."
+  },
+  "privacy": "Confidentialité",
+  "privacySection": {
+    "lastUpdated": "Dernière mise à jour : 16 mai 2025",
+    "title": "Conditions Générales d'Utilisation",
+    "thanks": "En utilisant l'application Keepr (ou Keepio), vous acceptez les présentes Conditions Générales d'Utilisation.",
+    "accessTitle": "Accès à l'application",
+    "accessText": "L'application est gratuite et accessible sans création de compte. Elle nécessite un appareil compatible avec iOS.",
+    "intellectualTitle": "Propriété intellectuelle",
+    "intellectualText": "Tout le contenu, le code source et les visuels sont la propriété exclusive du développeur. Toute reproduction ou modification est interdite.",
+    "prohibitedTitle": "Utilisation interdite",
+    "prohibitedText": "Il est interdit de :",
+    "prohibitedList": [
+      "Décompiler ou modifier l'application",
+      "L'utiliser à des fins illégales ou nuisibles",
+      "Tenter d'accéder aux données d'un autre utilisateur"
+    ],
+    "liabilityTitle": "Responsabilité",
+    "liabilityText": "Nous ne sommes pas responsables :",
+    "liabilityList": [
+      "D'une perte de données via iCloud",
+      "D'un dysfonctionnement de l'application"
+    ],
+    "lawTitle": "Droit applicable",
+    "lawText": "Les présentes conditions sont soumises au droit français. En cas de litige, les tribunaux compétents seront ceux du lieu de résidence du développeur."
+  }
+}

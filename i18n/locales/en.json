@@ -1,0 +1,80 @@
+{
+  "app": "Keepio",
+  "appSubtitle": "Organize your projects with clarity, simplicity, and power",
+  "about": "About",
+  "availableSoon": "Available soon",
+  "features": "Features",
+  "upcoming": "Upcoming",
+  "contact": "Contact",
+  "gcu": "GCU",
+  "rights": "All rights reserved.",
+  "gcuTitle": "General Conditions of Use",
+  "portfolio": "Portfolio",
+  "projectTitle": "Organize your projects",
+  "projectText": "Classify your projects based on your own categories",
+  "taskTitle": "Manage your tasks",
+  "taskText": "With a task list integrated into each project",
+  "noteTitle": "Note what matters",
+  "noteText": "With a personalized note-taking feature in each project",
+  "graphTitle": "Visualize your progress",
+  "graphText": "With statistics and your unique graph",
+  "styleTitle": "Minimalist application",
+  "styleText": "A simple and intuitive interface",
+  "syncTitle": "Synchronization",
+  "syncText": "Available on all your devices",
+  "form": {
+    "title": "Contact Us",
+    "subtitle": "A bug, a suggestion or a question? Don't hesitate to contact us through this form.",
+    "email": "Email",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "clear": "Clear",
+    "send": "Send"
+  },
+  "gcuSection": {
+    "lastUpdated": "Last updated: May 16, 2025",
+    "thankYou": "Thank you for using the Keepio app. We place great importance on protecting your privacy.",
+    "dataCollectedTitle": "Data Collected",
+    "dataCollected": "We do not collect any personally identifiable data (name, email, etc.). The app uses only :",
+    "dataCollectionList": [
+      "The names of projects, tasks and notes you create",
+      "Their status, creation date and progress"
+    ],
+    "storageTitle": "Data Storage",
+    "storageText": "Your data is stored locally on your device and in your private iCloud, via CloudKit. They are neither shared nor accessible to the developer.",
+    "rightsTitle": "Your Rights",
+    "rightsText": "Conform to the RGPD, you can :",
+    "rightsList": [
+      "Delete your data at any time from the app",
+      "Disable iCloud synchronization via your iOS settings"
+    ],
+    "contactTitle": "Contact",
+    "contactText": "For any question, use the contact form on our landing page."
+  },
+  "privacy": "Privacy",
+  "privacySection": {
+    "lastUpdated": "Last updated: May 16, 2025",
+    "title": "Terms of Use",
+    "thanks": "By using the Keepr (or Keepio) app, you agree to these Terms of Use.",
+    "accessTitle": "App Access",
+    "accessText": "The app is free and accessible without creating an account. It requires an iOS compatible device.",
+    "intellectualTitle": "Intellectual Property",
+    "intellectualText": "All content, source code, and visuals are the exclusive property of the developer. Any reproduction or modification is prohibited.",
+    "prohibitedTitle": "Prohibited Use",
+    "prohibitedText": "It is prohibited to:",
+    "prohibitedList": [
+      "Decompile or modify the app",
+      "Use it for illegal or harmful purposes",
+      "Attempt to access another user's data"
+    ],
+    "liabilityTitle": "Liability",
+    "liabilityText": "We are not responsible for:",
+    "liabilityList": [
+      "Data loss through iCloud",
+      "App malfunction"
+    ],
+    "lawTitle": "Applicable Law",
+    "lawText": "These terms are subject to French law. In case of dispute, the competent courts will be those of the developer's place of residence."
+  }
+}
