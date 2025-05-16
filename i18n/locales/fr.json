@@ -32,6 +32,17 @@
     "clear": "Tout Effacer",
     "send": "Envoyer"
   },
+  "futureFeatures": {
+    "title": "À venir sur votre application",
+    "aiIntegration": "✨ Intégration avec IA",
+    "aiIntegrationText": "Pour vous permettre de naviguer, créer et organiser sans prise de tête",
+    "linksAndFiles": "✨ Liens et Fichiers",
+    "linksAndFilesText": "Pour regrouper tout au même endroit, dans le même projet",
+    "voiceNotes": "✨ Notes vocales",
+    "voiceNotesText": "Pas le temps d’écrire ? Voici un nouveau moyen de mettre vos idées sur papier",
+    "otherFeatures": "✨ D’autres fonctionnalités à venir",
+    "otherFeaturesText": "Restez à l’affût des prochaines mises à jour pour profiter de toutes les fonctionnalités"
+  },
   "gcuSection": {
     "lastUpdated": "Dernière mise à jour : 16 mai 2025",
     "thankYou": "Merci d'utiliser l'application Keepr (ou Keepio). Nous accordons une grande importance à la protection de votre vie privée.",

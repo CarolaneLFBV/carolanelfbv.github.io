@@ -32,6 +32,17 @@
     "clear": "Clear",
     "send": "Send"
   },
+  "futureFeatures": {
+    "title": "Coming soon to your app",
+    "aiIntegration": "✨ AI Integration",
+    "aiIntegrationText": "To help you navigate, create, and organize without stress",
+    "linksAndFiles": "✨ Links and Files",
+    "linksAndFilesText": "To group everything in the same place, in the same project",
+    "voiceNotes": "✨ Voice Notes",
+    "voiceNotesText": "No time to write? Here's a new way to put your ideas on paper",
+    "otherFeatures": "✨ Other features to come",
+    "otherFeaturesText": "Stay tuned for future updates to enjoy all the features"
+  },
   "gcuSection": {
     "lastUpdated": "Last updated: May 16, 2025",
     "thankYou": "Thank you for using the Keepio app. We place great importance on protecting your privacy.",

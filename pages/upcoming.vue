@@ -1,22 +1,23 @@
 <script setup>
 import UpcomingItem from "~/components/item/UpcomingItem.vue";
+const { t } = useI18n();
 
 const features = [
   {
-    title: '✨ Intégration avec IA',
-    text: 'Pour vous permettre de naviguer, créer et organiser sans prise de tête',
+    title: t('futureFeatures.aiIntegration'),
+    text: t('futureFeatures.aiIntegrationText'),
   },
   {
-    title: '✨ Liens et Fichiers',
-    text: 'Pour regrouper tout au même endroit, dans le même projet',
+    title: t('futureFeatures.linksAndFiles'),
+    text: t('futureFeatures.linksAndFilesText'),
   },
   {
-    title: '✨ Notes vocales',
-    text: 'Pas le temps d’écrire ? Voici un nouveau moyen de mettre vos idées sur papier',
+    title: t('futureFeatures.voiceNotes'),
+    text: t('futureFeatures.voiceNotesText'),
   },
   {
-    title: '✨ D’autres fonctionnalités à venir',
-    text: 'Restez à l’affût des prochaines mises à jour pour profiter de toutes les fonctionnalités',
+    title: t('futureFeatures.otherFeatures'),
+    text: t('futureFeatures.otherFeaturesText'),
   },
 ]
 </script>

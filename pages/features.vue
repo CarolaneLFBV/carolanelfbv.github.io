@@ -15,7 +15,7 @@
 
       <div class="flex justify-center">
         <NuxtImg
-            src="/images/mockup-overview.png"
+            src="~/public/images/mockup-overview.png"
             alt="Mockup Overview"
             class="max-w-[250px] md:max-w-xs lg:max-w-sm opacity-0 animate-fade-in"
             style="animation-delay: 0.5s"
