@@ -2,6 +2,10 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/keepio/',
+    buildAssetsDir: 'assets'
+  },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxtjs/i18n'],
