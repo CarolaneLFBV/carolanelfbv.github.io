@@ -16,11 +16,6 @@ const { t } = useI18n();
           </router-link>
           <router-link to="/" class="text-xl font-bold text-gray-900">{{ t("app") }}</router-link>
         </div>
-        <div class="flex items-center gap-6">
-          <a class="nav-link" href="#features">{{ t("features") }}</a>
-          <a class="nav-link" href="#upcoming">{{ t("upcoming") }}</a>
-          <a class="nav-link" href="#contact">{{ t("contact") }}</a>
-        </div>
       </nav>
 
       <BackgroundView class="fixed top-0 left-0 w-full h-full z-[-1]"/>

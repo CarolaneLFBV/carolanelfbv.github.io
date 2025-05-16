@@ -27,7 +27,6 @@
 
 <script setup>
 import FeatureCard from "~/components/item/FeatureCard.vue";
-
 const { t } = useI18n();
 const features = [
   {
