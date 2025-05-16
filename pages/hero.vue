@@ -27,7 +27,7 @@ const {t} = useI18n();
 
     <div>
       <NuxtImg
-          src="/mockup-keepio.png"
+          src="/images/mockup-keepio.png"
           alt="Capture de l'application Keepio"
           class="mx-auto max-w-[280px] md:max-w-[360px] opacity-0 animate-fade-in"
           style="animation-delay: 0.8s"
