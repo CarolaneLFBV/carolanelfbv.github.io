@@ -3,8 +3,10 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   app: {
-    baseURL: '/keepio/',
-    buildAssetsDir: 'assets'
+    baseURL: '/keepio-landing-page/',
+  },
+  nitro: {
+    preset: 'github_pages',
   },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
