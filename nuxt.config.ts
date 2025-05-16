@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   app: {
-    buildAssetsDir: '_nuxt/',
     head: {
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -24,6 +23,10 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image'
   ],
+  image: {
+    dir: 'public/images',
+    baseURL: '/keepio-landing-page/images'
+  },
   css: ['~/assets/css/main.css', '~/assets/css/app.css'],
   vite: {
     plugins: [
