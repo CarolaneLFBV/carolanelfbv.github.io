@@ -8,7 +8,7 @@ const {t} = useI18n();
   <div class="relative z-10 flex flex-col items-center justify-center">
     <div class="flex flex-col items-center justify-center gap-2 pb-[10vh] pt-[20vh]">
       <nuxt-img
-          src="~/public/images/icon.png"
+          src="/icon.png"
           alt="Icon l'application Keepio"
           class="mx-auto w-20 opacity-0 animate-fade-in"
           style="animation-delay: 0.8s"
@@ -27,7 +27,7 @@ const {t} = useI18n();
 
     <div>
       <NuxtImg
-          src="~/public/images/mockup-keepio.png"
+          src="/mockup-keepio.png"
           alt="Capture de l'application Keepio"
           class="mx-auto max-w-[280px] md:max-w-[360px] opacity-0 animate-fade-in"
           style="animation-delay: 0.8s"
