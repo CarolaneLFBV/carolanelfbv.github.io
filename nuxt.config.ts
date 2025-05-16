@@ -24,10 +24,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image'
   ],
-  image: {
-    dir: 'public/images',
-    baseURL: '/keepio-landing-page/images'
-  },
   css: ['~/assets/css/main.css', '~/assets/css/app.css'],
   vite: {
     plugins: [
