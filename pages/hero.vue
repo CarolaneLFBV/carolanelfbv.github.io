@@ -7,6 +7,12 @@ const {t} = useI18n();
 <template>
   <div class="relative z-10 flex flex-col items-center justify-center">
     <div class="flex flex-col items-center justify-center gap-2 pb-[10vh] pt-[20vh]">
+      <nuxt-img
+          src="./images/icon.png"
+          alt="Icon l'application Keepio"
+          class="mx-auto w-20 opacity-0 animate-fade-in"
+          style="animation-delay: 0.8s"
+      />
       <h1 class="text-5xl md:text-6xl font-extrabold opacity-0 animate-slide-up" style="animation-delay: 0.2s">
         {{ t('app') }}
       </h1>
@@ -20,12 +26,12 @@ const {t} = useI18n();
     </div>
 
     <div>
-      <img
-          src="/mockup-keepio.png"
+      <NuxtImg
+          src="./images/mockup-keepio.png"
           alt="Capture de l'application Keepio"
           class="mx-auto max-w-[280px] md:max-w-[360px] opacity-0 animate-fade-in"
           style="animation-delay: 0.8s"
-      >
+      />
     </div>
   </div>
 </template>

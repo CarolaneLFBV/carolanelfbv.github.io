@@ -25,7 +25,7 @@ const features = [
   <section class="py-24 px-6">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div class="flex justify-center">
-        <img src="/mockup-future.png" alt="Phone future features" class="max-w-[250px] md:max-w-sm" />
+        <NuxtImg src="./images/mockup-future.png" alt="Phone future features" class="max-w-[250px] md:max-w-sm" />
       </div>
 
       <div class="flex flex-col gap-8">

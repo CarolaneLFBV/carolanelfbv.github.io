@@ -3,16 +3,27 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   app: {
-    baseURL: '/keepio-landing-page/',
     buildAssetsDir: '_nuxt/',
-    cdnURL: '/keepio-landing-page'
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      meta: [
+        { name: 'description', content: 'Keepio – Organize your projects with clarity' },
+      ]
+    }
   },
-  nitro: {
-    preset: 'github_pages',
+  experimental: {
+    payloadExtraction: false
   },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/icon',
+    '@nuxtjs/i18n',
+    '@nuxt/image'
+  ],
   css: ['~/assets/css/main.css', '~/assets/css/app.css'],
   vite: {
     plugins: [
