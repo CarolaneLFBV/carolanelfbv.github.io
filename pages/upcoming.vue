@@ -30,7 +30,7 @@ const features = [
       </div>
 
       <div class="flex flex-col gap-8">
-        <h3 class="text-xl font-bold">À venir sur votre application</h3>
+        <h3 class="text-xl font-bold">{{ t('futureFeatures.title') }}</h3>
 
         <UpcomingItem
             v-for="(item, i) in features"
