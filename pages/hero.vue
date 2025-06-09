@@ -19,10 +19,9 @@ const {t} = useI18n();
       <p class="text-lg text-center text-gray-600 opacity-0 animate-slide-up" style="animation-delay: 0.4s">
         {{ t('appSubtitle') }}
       </p>
-      <a href="#" class="opacity-0 animate-fade-in" style="animation-delay: 0.6s"> {{ t('availableSoon') }}</a>
-      <!-- <a href="#" class="opacity-0 animate-fade-in" style="animation-delay: 0.6s">
+      <a href="https://apps.apple.com/fr/app/keepio/id6746096493?l=en-GB" class="opacity-0 animate-fade-in" style="animation-delay: 0.6s">
         <img src="/app-store-badge.svg" alt="Download on the App Store" class="h-30">
-      </a> -->
+      </a>
     </div>
 
     <div>
