@@ -10,7 +10,7 @@ const {t} = useI18n();
       <nuxt-img
           src="/icon.png"
           alt="Icon l'application Keepio"
-          class="mx-auto w-20 opacity-0 animate-fade-in"
+          class="mx-auto w-20 rounded-lg opacity-0 animate-fade-in"
           style="animation-delay: 0.8s"
       />
       <h1 class="text-5xl md:text-6xl font-extrabold opacity-0 animate-slide-up" style="animation-delay: 0.2s">
