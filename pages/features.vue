@@ -1,4 +1,4 @@
-<script setup lang="tsx">
+<script setup lang="ts">
 import CardFeature from '~/components/item/FeatureCard.vue'
 const { t } = useI18n()
 
@@ -31,44 +31,27 @@ const selectFeature = (featureIcon: FeatureKey) => {
   selectedFeature.value = featureIcon
 }
 
-const Icon = {
-  projects: () => (
-    <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5] text-orange-700" aria-hidden="true">
-      <path d="M3 7h6l2 2h10v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" stroke="currentColor"/>
-    </svg>
-  ),
-  tasks: () => (
-    <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5] text-emerald-700" aria-hidden="true">
-      <path d="M4 6h16M4 12h7M4 18h7" stroke="currentColor" stroke-linecap="round"/>
-      <path d="M15 11l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  ),
-  notes: () => (
-    <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5] text-sky-700" aria-hidden="true">
-      <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor"/>
-      <path d="M14 3v5h5" stroke="currentColor"/>
-      <path d="M9 13h6M9 17h6" stroke="currentColor" stroke-linecap="round"/>
-    </svg>
-  ),
-  stats: () => (
-    <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5] text-orange-700" aria-hidden="true">
-      <path d="M3 20.5h18" stroke="currentColor" stroke-linecap="round"/>
-      <path d="M5.5 15.5l4-4 3.5 3.5 5-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18 6.5h3v3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+const iconPaths = {
+  projects: 'M3 7h6l2 2h10v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z',
+  tasks: 'M4 6h16M4 12h7M4 18h7',
+  tasksExtra: 'M15 11l2 2 4-4',
+  notes: 'M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z',
+  notesCorner: 'M14 3v5h5',
+  notesLines: 'M9 13h6M9 17h6',
+  stats: 'M3 20.5h18',
+  statsLine: 'M5.5 15.5l4-4 3.5 3.5 5-5',
+  statsArrow: 'M18 6.5h3v3',
+  ui: 'M8 7h8M8 11h8M8 15h5',
+  sync: 'M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6'
+}
 
-  ),
-  ui: () => (
-    <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5] text-rose-700" aria-hidden="true">
-      <rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor"/>
-      <path d="M8 7h8M8 11h8M8 15h5" stroke="currentColor" stroke-linecap="round"/>
-    </svg>
-  ),
-  sync: () => (
-    <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5] text-indigo-700" aria-hidden="true">
-      <path d="M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  ),
+const iconColors = {
+  projects: 'text-orange-700',
+  tasks: 'text-emerald-700', 
+  notes: 'text-sky-700',
+  stats: 'text-orange-700',
+  ui: 'text-rose-700',
+  sync: 'text-indigo-700'
 }
 </script>
 
@@ -89,7 +72,39 @@ const Icon = {
           @click="selectFeature(f.icon)"
         >
           <template #icon>
-            <component :is="Icon[f.icon]" />
+            <svg viewBox="0 0 24 24" fill="none" class="size-5 stroke-[1.5]" :class="iconColors[f.icon]" aria-hidden="true">
+              <!-- Projects icon -->
+              <path v-if="f.icon === 'projects'" :d="iconPaths.projects" stroke="currentColor"/>
+              
+              <!-- Tasks icon -->
+              <template v-else-if="f.icon === 'tasks'">
+                <path :d="iconPaths.tasks" stroke="currentColor" stroke-linecap="round"/>
+                <path :d="iconPaths.tasksExtra" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </template>
+              
+              <!-- Notes icon -->
+              <template v-else-if="f.icon === 'notes'">
+                <path :d="iconPaths.notes" stroke="currentColor"/>
+                <path :d="iconPaths.notesCorner" stroke="currentColor"/>
+                <path :d="iconPaths.notesLines" stroke="currentColor" stroke-linecap="round"/>
+              </template>
+              
+              <!-- Stats icon -->
+              <template v-else-if="f.icon === 'stats'">
+                <path :d="iconPaths.stats" stroke="currentColor" stroke-linecap="round"/>
+                <path :d="iconPaths.statsLine" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                <path :d="iconPaths.statsArrow" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </template>
+              
+              <!-- UI icon -->
+              <template v-else-if="f.icon === 'ui'">
+                <rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor"/>
+                <path :d="iconPaths.ui" stroke="currentColor" stroke-linecap="round"/>
+              </template>
+              
+              <!-- Sync icon -->
+              <path v-else-if="f.icon === 'sync'" :d="iconPaths.sync" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </template>
         </CardFeature>
       </div>
