@@ -37,8 +37,9 @@ onUnmounted(() => {
     
     <nav class="fixed top-0 z-20 left-0 w-full bg-white/30 backdrop-blur-md shadow-md p-4 flex justify-center gap-6">
     <a class="nav-link" href="#features">{{ t("features") }}</a>
-    <a class="nav-link" href="#upcoming">{{ t("upcoming") }}</a>
     <a class="nav-link" href="#contact">{{ t("contact") }}</a>
+    <a class="nav-link" href="/terms">{{ t("gcu") }}</a>
+    <a class="nav-link" href="/privacy">{{ t("privacy") }}</a>
   </nav>
 
     <BackgroundView class="fixed top-0 left-0 w-full h-full z-[-1]"/>
@@ -49,10 +50,6 @@ onUnmounted(() => {
         
         <div id="features">
           <Features/>
-        </div>
-        
-        <div id="upcoming">
-          <Upcoming/>
         </div>
         
         <div id="contact">

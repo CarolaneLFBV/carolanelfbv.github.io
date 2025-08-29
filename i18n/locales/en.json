@@ -1,6 +1,6 @@
 {
   "app": "Keepio",
-  "appSubtitle": "Organize your projects with clarity, simplicity, and power",
+  "appSubtitle": "Organize your projects with clarity and simplicity",
   "about": "About",
   "availableSoon": "Available soon",
   "features": "Features",
@@ -11,20 +11,20 @@
   "gcuTitle": "General Conditions of Use",
   "portfolio": "Portfolio",
   "projectTitle": "Organize your projects",
-  "projectText": "Classify your ideas into projects",
+  "projectText": "Structure your ideas into organized projects",
   "taskTitle": "Manage your tasks",
-  "taskText": "With a task list integrated into each project, and tags to organize them",
+  "taskText": "Integrated task lists with smart tagging for better organization",
   "noteTitle": "Note what matters",
-  "noteText": "With a personalized note-taking feature in each project, and tags to organize them",
+  "noteText": "Capture thoughts with personalized notes and intelligent tagging",
   "graphTitle": "Visualize your progress",
-  "graphText": "With statistics and your unique graph",
+  "graphText": "Track progress with insightful statistics and personalized charts",
   "styleTitle": "Minimalist application",
-  "styleText": "A simple and intuitive interface",
+  "styleText": "Clean, intuitive design that gets out of your way",
   "syncTitle": "Synchronization",
-  "syncText": "Available on all your devices",
+  "syncText": "Seamlessly synced across all your Apple devices",
   "form": {
     "title": "Contact Us",
-    "subtitle": "A bug, a suggestion or a question? Don't hesitate to contact us through this form.",
+    "subtitle": "Found a bug, have a suggestion, or need help? We'd love to hear from you.",
     "email": "Email",
     "name": "Name",
     "subject": "Subject",
@@ -35,17 +35,17 @@
   "futureFeatures": {
     "title": "Coming soon to your app",
     "aiIntegration": "✨ AI Integration",
-    "aiIntegrationText": "To help you navigate, create, and organize without stress",
+    "aiIntegrationText": "Smart assistance to help you navigate, create, and organize effortlessly",
     "linksAndFiles": "✨ Links and Files",
-    "linksAndFilesText": "To group everything in the same place, in the same project",
+    "linksAndFilesText": "Keep everything together in one place, within your projects",
     "voiceNotes": "✨ Voice Notes",
-    "voiceNotesText": "No time to write? Here's a new way to put your ideas on paper",
+    "voiceNotesText": "Capture ideas instantly when you're on the go",
     "otherFeatures": "✨ Other features to come",
-    "otherFeaturesText": "Stay tuned for future updates to enjoy all the features"
+    "otherFeaturesText": "More exciting features coming in future updates"
   },
   "gcuSection": {
     "lastUpdated": "Last updated: Jul 7, 2025",
-    "thankYou": "Thank you for using the Keepio app. We place great importance on protecting your privacy.",
+    "thankYou": "Thank you for using Keepio. Your privacy is our top priority.",
     "dataCollectedTitle": "Data Collected",
     "dataCollected": "We do not collect any personally identifiable data (name, email, etc.). The app uses only :",
     "dataCollectionList": [
@@ -53,15 +53,15 @@
       "Their status, creation date and progress"
     ],
     "storageTitle": "Data Storage",
-    "storageText": "Your data is stored locally on your device and in your private iCloud, via CloudKit. They are neither shared nor accessible to the developer.",
+    "storageText": "Your data is stored locally on your device and in your private iCloud via CloudKit. We cannot access or share your information.",
     "rightsTitle": "Your Rights",
-    "rightsText": "Conform to the RGPD, you can :",
+    "rightsText": "In compliance with GDPR, you can:",
     "rightsList": [
       "Delete your data at any time from the app",
       "Disable iCloud synchronization via your iOS settings"
     ],
     "contactTitle": "Contact",
-    "contactText": "For any question, use the contact form on our landing page."
+    "contactText": "For any questions, please use the contact form on our website."
   },
   "privacy": "Privacy",
   "privacySection": {

@@ -1,6 +1,6 @@
 {
   "app": "Keepio",
-  "appSubtitle": "Organisez vos projets avec clarté, simplicité et puissance",
+  "appSubtitle": "Organisez vos projets avec clarté et simplicité",
   "about": "À propos",
   "availableSoon": "Disponible bientôt",
   "features": "Fonctionnalités",
@@ -11,20 +11,20 @@
   "gcuTitle": "Conditions Générales d’Utilisation",
   "portfolio": "Portfolio",
   "projectTitle": "Organisez vos projets",
-  "projectText": "Classez vos idées dans des projets",
+  "projectText": "Structurez vos idées en projets organisés",
   "taskTitle": "Gérez vos tâches",
-  "taskText": "Avec une liste de tâches intégrée à chaque projet, et des tags pour les organiser",
+  "taskText": "Listes de tâches intégrées avec étiquetage intelligent",
   "noteTitle": "Notez ce qui compte",
-  "noteText": "Avec une prise de note personnalisée dans chaque projet, et des tags pour les organiser",
+  "noteText": "Capturez vos idées avec des notes personnalisées et un étiquetage intelligent",
   "graphTitle": "Visualisez vos progrès",
-  "graphText": "Grâce aux statistiques et à votre graphique personnalisé",
+  "graphText": "Suivez vos progrès avec des statistiques perspicaces et des graphiques personnalisés",
   "styleTitle": "Application minimaliste",
-  "styleText": "Une interface simple et intuitive",
+  "styleText": "Design épuré et intuitif qui vous laisse vous concentrer",
   "syncTitle": "Synchronisation",
-  "syncText": "Disponible sur tous vos appareils",
+  "syncText": "Synchronisation transparente sur tous vos appareils Apple",
   "form": {
     "title": "Contactez-nous",
-    "subtitle": "Un bug, une suggestion ou une question ? N’hésitez pas à nous écrire via ce formulaire.",
+    "subtitle": "Un bug, une suggestion ou une question ? Nous serions ravis de vous entendre.",
     "email": "E-mail",
     "name": "Nom",
     "subject": "Sujet",
@@ -35,17 +35,17 @@
   "futureFeatures": {
     "title": "Bientôt dans votre app",
     "aiIntegration": "✨ Intégration de l’IA",
-    "aiIntegrationText": "Pour vous aider à naviguer, créer et organiser sans stress",
+    "aiIntegrationText": "Assistance intelligente pour naviguer, créer et organiser sans effort",
     "linksAndFiles": "✨ Liens et fichiers",
-    "linksAndFilesText": "Pour tout regrouper au même endroit, dans le même projet",
+    "linksAndFilesText": "Gardez tout ensemble au même endroit, dans vos projets",
     "voiceNotes": "✨ Notes vocales",
-    "voiceNotesText": "Pas le temps d’écrire ? Voici une nouvelle façon de poser vos idées",
+    "voiceNotesText": "Capturez vos idées instantanément en déplacement",
     "otherFeatures": "✨ D’autres fonctionnalités à venir",
-    "otherFeaturesText": "Restez à l’écoute des prochaines mises à jour pour profiter de toutes les nouveautés"
+    "otherFeaturesText": "Plus de fonctionnalités passionnantes dans les prochaines mises à jour"
   },
   "gcuSection": {
     "lastUpdated": "Dernière mise à jour : 7 juillet 2025",
-    "thankYou": "Merci d’utiliser l’application Keepio. Nous accordons une grande importance à la protection de votre vie privée.",
+    "thankYou": "Merci d'utiliser Keepio. Votre confidentialité est notre priorité absolue.",
     "dataCollectedTitle": "Données collectées",
     "dataCollected": "Nous ne collectons aucune donnée personnelle identifiable (nom, email, etc.). L’application utilise uniquement :",
     "dataCollectionList": [
@@ -53,7 +53,7 @@
       "Leur statut, date de création et progression"
     ],
     "storageTitle": "Stockage des données",
-    "storageText": "Vos données sont stockées localement sur votre appareil et dans votre iCloud privé via CloudKit. Elles ne sont ni partagées ni accessibles par le développeur.",
+    "storageText": "Vos données sont stockées localement sur votre appareil et dans votre iCloud privé via CloudKit. Nous ne pouvons pas accéder à vos informations ni les partager.",
     "rightsTitle": "Vos droits",
     "rightsText": "Conformément au RGPD, vous pouvez :",
     "rightsList": [
@@ -61,7 +61,7 @@
       "Désactiver la synchronisation iCloud dans les réglages iOS"
     ],
     "contactTitle": "Contact",
-    "contactText": "Pour toute question, utilisez le formulaire de contact disponible sur notre page d’accueil."
+    "contactText": "Pour toute question, veuillez utiliser le formulaire de contact sur notre site web."
   },
   "privacy": "Confidentialité",
   "privacySection": {

@@ -8,10 +8,6 @@ const features = [
     text: t('futureFeatures.aiIntegrationText'),
   },
   {
-    title: t('futureFeatures.linksAndFiles'),
-    text: t('futureFeatures.linksAndFilesText'),
-  },
-  {
     title: t('futureFeatures.voiceNotes'),
     text: t('futureFeatures.voiceNotesText'),
   },

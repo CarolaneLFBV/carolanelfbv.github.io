@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
       meta: [
-        { name: 'description', content: 'Keepio – Organize your projects with clarity' },
+        { name: 'description', content: 'Keepio – Organize your projects with clarity and simplicity. The minimalist iOS app for managing tasks, notes, and progress tracking.' },
       ]
     }
   },
